@@ -1,6 +1,6 @@
 # Become_PRO_with_Angular
 
-## Folder Structure
+## the Folder Structure
 ```
 project_name/
 |-- data/
@@ -25,11 +25,11 @@ project_name/
 |-- README.md                
 ```
 
-## Deployment process
+## the Deployment process
 Here will be the deployment process (command for node.js/ng)
 
-## Contributors
-<a href="https://github.com/ruslandzoyb">ruslandzoyb</a> -> the mentor of the project <br>
-<a href="https://github.com/TEZv">TEZv</a> -> the student of the project <br>
+## the Contributors
+<a href="https://github.com/ruslandzoyb">Ruslan Dzobko</a> -> the mentor of the project <br>
+<a href="https://github.com/TEZv">Oksana Kolisnyk</a> -> the student of the project <br>
 
 ### Made in 🇺🇦
