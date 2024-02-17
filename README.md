@@ -41,7 +41,7 @@ Implement authentication/authorization<br>
 🔊 Duration:<br>
 1 month<br>
 
-# 1-st stage
+# 1-st stage of the Project
 
 —-> 1. UI (Angular development) of Lifechanger project.<br>
 
