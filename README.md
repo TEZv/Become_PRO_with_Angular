@@ -80,7 +80,7 @@ Implement authentication/authorization<br>
 09.03.24-12.03.24<br>
 4 days<br>
 
-### **p.s.** The emojis section<br>
+**The emojis section**<br>
 ❇️ current task<br>
 ✳️ the next tasks<br>
 ✅ done task
