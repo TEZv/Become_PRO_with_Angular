@@ -1,13 +1,29 @@
 # Become_PRO_with_Angular
 
 ## Folder Structure
-├── app <br>                 ## it is for<br><br>  
-│ ├── libs <br>              ## it is for<br><br> 
-│ │   ├── nav-bar <br>       ## it is for<br><br>  
-│ ├── modules <br>           ## it is for<br><br>  
-├── index.html <br>          ## it is for<br><br> 
-├── LICENSE <br> 
-└── README.md <br> 
+```
+project_name/
+|-- data/
+|   |-- raw/                # It is for
+|   |-- processed/          # It is for
+|   |-- external/           # It is for
+|   |-- interim/            
+|   |-- datasets/                  
+|-- src/                    
+|   |-- data_preprocessing/  
+|   |-- feature_engineering/ 
+|   |-- model/               
+|   |-- evaluation/          
+|   |-- api/                 
+|-- models/                  
+|-- tests/                  
+|-- db/                      
+|-- docker/                  
+|-- cli/                     
+|-- web/                     
+|-- requirements.txt         
+|-- README.md                
+```
 
 ## Deployment process
 Here will be the deployment process (command for node.js/ng)
