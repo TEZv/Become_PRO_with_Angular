@@ -1,13 +1,13 @@
 # Become_PRO_with_Angular
 
 ## Folder Structure
-├── app                 ## it is for
-│ ├── libs              ## it is for
-│ │   ├── nav-bar       ## it is for
-│ ├── modules           ## it is for
-├── index.html          ## it is for
-├── LICENSE
-└── README.md
+├── app <br>                 ## it is for
+│ ├── libs <br>              ## it is for
+│ │   ├── nav-bar <br>       ## it is for
+│ ├── modules <br>           ## it is for
+├── index.html <br>          ## it is for
+├── LICENSE <br> 
+└── README.md <br> 
 
 ## Deployment process
 Here will be the deployment process (command for node.js/ng)
