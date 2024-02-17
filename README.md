@@ -78,6 +78,11 @@ Implement authentication/authorization<br>
 ✳️ 1.7.Testing<br>
 🔊 Duration:<br>
 09.03.24-12.03.24<br>
-4 days
+4 days<br>
+
+**p.s.**<br>
+❇️ current task<br>
+✳️ the next tasks<br>
+✅ done task
 
 ### Made in 🇺🇦
