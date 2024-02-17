@@ -1,11 +1,11 @@
 # Become_PRO_with_Angular
 
 ## Folder Structure
-├── app <br>                 ## it is for<br> 
-│ ├── libs <br>              ## it is for<br> 
-│ │   ├── nav-bar <br>       ## it is for<br> 
-│ ├── modules <br>           ## it is for<br> 
-├── index.html <br>          ## it is for<br> 
+├── app <br>                 ## it is for<br><br>  
+│ ├── libs <br>              ## it is for<br><br> 
+│ │   ├── nav-bar <br>       ## it is for<br><br>  
+│ ├── modules <br>           ## it is for<br><br>  
+├── index.html <br>          ## it is for<br><br> 
 ├── LICENSE <br> 
 └── README.md <br> 
 
