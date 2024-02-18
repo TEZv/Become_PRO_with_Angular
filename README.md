@@ -21,7 +21,8 @@ project_name/
 |-- docker/                  
 |-- cli/                     
 |-- web/                     
-|-- requirements.txt         
+|-- requirements.txt
+|-- LICENSE   
 |-- README.md                
 ```
 
