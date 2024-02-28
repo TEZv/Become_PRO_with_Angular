@@ -2,7 +2,7 @@
 
 ## the Reason for that project
 
-To improve skills of front end(Angular,Vue ?, React ?), Rxjs, Store(Ngrx), routing, interaction with backend(calls, interceptors), improve skills -at development components, directives, services, unit testing.<br>
+To improve skills of front end (Angular, Vue ?, React ?), Rxjs, Store (Ngrx), routing, interaction with backend (calls, interceptors), improve skills - at development components, directives, services, unit testing.<br>
 
 Improve skills on backend development, learn about deployment, hosting, CI\CD. Learn about mentoring and creation plan of course, work as a team.
 
@@ -19,7 +19,7 @@ https://lifechanger-portfolio-task3.netlify.app/<br>
 
 —-> 1. UI (Angular development) of Lifechanger project.<br>
 🔊 Duration:<br>
-1 month<br>
+2 months<br>
 
 —-> 2. Implement server-side(.NET/C#) to move data on the backend.<br> 
 Call from UI on backend (rxjs, ngrx store)<br>
@@ -45,40 +45,46 @@ Implement authentication/authorization<br>
 
 —-> 1. UI (Angular development) of Lifechanger project.<br>
 
-❇️ 1.1. Introduction & getting started, Angular CLI<br>
+✅ 1.1. Introduction & getting started, Angular CLI, Infrastructure<br>
 🔊 Duration:<br>
-17.02.24-20.02.24<br>
-4 days<br>
+17.02.24-27.02.24<br>
+10 days<br>
 
-✳️ 1.2. Components/modules<br>
+❇️ 1.2. Typescript/JS/HTML/CSS<br>
 🔊 Duration:<br>
-20.02.24-24.02.24<br>
-5 days<br>
+27.02.24-05.03.24<br>
+7 days<br>
 
-✳️ 1.3. Services/DI<br>
+✳️ 1.3. Components/modules/templates<br>
+(start to implement the Lifechanger project)<br>
 🔊 Duration:<br>
-24.02.24-27.02.24<br>
-4 days<br>
+05.03.24-12.03.24<br>
+7 days<br>
 
-✳️ 1.4. Directives<br>
+✳️ 1.4. Services/DI<br>
 🔊 Duration:<br>
-27.02.24-02.03.24<br>
-5 days<br>
+12.03.24-19.03.24<br>
+7 days<br>
 
-✳️ 1.5. Routings & navigation<br>
+✳️ 1.5. Directives<br>
 🔊 Duration:<br>
-02.03.24-05.03.24<br>
-4 days<br>
+19.03.24-26.03.24<br>
+7 days<br>
 
-✳️ 1.6. Forms<br>
+✳️ 1.6. Routings & navigation<br>
 🔊 Duration:<br>
-05.03.24-09.03.24<br>
-5 days<br>
+26.03.24-02.04.24<br>
+7 days<br>
 
-✳️ 1.7.Testing<br>
+✳️ 1.7. Forms<br>
 🔊 Duration:<br>
-09.03.24-12.03.24<br>
-4 days<br>
+02.04.24-09.04.24<br>
+7 days<br>
+
+✳️ 1.8. Unit Testing<br>
+🔊 Duration:<br>
+09.04.24-16.04.24<br>
+7 days<br>
 
 **&The emojis section:&**<br>
 ❇️ current task<br>
