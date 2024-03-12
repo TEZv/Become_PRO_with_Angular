@@ -2,26 +2,18 @@
 
 ## the Folder Structure
 ```
-project_name/
-|-- data/
-|   |-- raw/                # It is for
-|   |-- processed/          # It is for
-|   |-- external/           # It is for
-|   |-- interim/            
-|   |-- datasets/                  
-|-- src/                    
-|   |-- data_preprocessing/  
-|   |-- feature_engineering/ 
-|   |-- model/               
-|   |-- evaluation/          
-|   |-- api/                 
-|-- models/                  
-|-- tests/                  
-|-- db/                      
-|-- docker/                  
-|-- cli/                     
-|-- web/                     
-|-- requirements.txt         
+lifechanger/
+|-- @node-modules/
+|-- src/
+|   |-- app/                # It is for
+|   |-- assets/             # It is for
+|   |-- favicon.ico/        # It is for
+|   |-- index.html/            
+|   |-- main.server.ts/   
+|   |-- main.ts/     
+|   |-- styles.css/          
+|-- .editorconfig                          
+      
 |-- README.md                
 ```
 
