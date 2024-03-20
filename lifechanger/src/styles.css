@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --colors-grey: #ebeaed;
+  --colors-heading: #1e0e62;
+  --black: #000;
+  --black-white: #000;
+  --white: #fff;
+  --soft-white: #fff;
+  --pink: #e70faa;
+  --purple: #a270ff;
+  --blue: #13b0f5;
+  --green: #018c0f;
+  --dark-content: #666;
+  --dark-link: #666;
+  --dark-heading: #666;
+  --light-white: #d7ffe0;
+  --light-Content: #a7a7a7;
+  --Solid-Heading: #42446e;
+  --solid-heading: #42446e;
+  --footer-link: #42446e;
+  --font-family-body: "Poppins", sans-serif;
+  --box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+  --font-weight: 400;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family-body);
+  padding: 81px 0 291px 0;
+}
