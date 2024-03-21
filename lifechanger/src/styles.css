@@ -6,9 +6,9 @@
   --black-white: #000;
   --white: #fff;
   --soft-white: #fff;
-  --pink: #e70faa;
+  --pink: #ee03ab;
   --purple: #a270ff;
-  --blue: #13b0f5;
+  --dark-purple: #3b237e;
   --green: #018c0f;
   --dark-content: #666;
   --dark-link: #666;
@@ -25,6 +25,7 @@
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
 }
 body {
   display: flex;
@@ -32,5 +33,12 @@ body {
   align-items: center;
   justify-content: center;
   font-family: var(--font-family-body);
-  padding: 81px 0 291px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
