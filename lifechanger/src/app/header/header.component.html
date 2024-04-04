@@ -1,51 +1,71 @@
 <header class="header">
-  <div class="nav-container">
-    <div class="nav-logo">
+  <div class="header__nav">
+    <div class="header__logo">
       <a href="#">
         <img
-          src="../../assets/footer/logo-footer.jpg"
+          src="../../assets/header/logo-header.jpg"
           alt="Oksana's Kolisnyk logo image"
-          class="footer__image"
+          class="header__logo-image"
         />
       </a>
     </div>
     <nav>
-      <div class="nav-primary">
+      <div class="header__nav-container">
         <div>
-          <ul class="nav-links">
+          <ul class="header__nav-links">
             <li>
-              <a href="#" class="nav-link">Home</a>
+              <a href="#" class="header__nav-link">Home</a>
             </li>
             <li>
-              <a href="#about" class="nav-link about">About</a>
+              <a href="#about" class="header__nav-link header__nav-link-about"
+                >About</a
+              >
             </li>
             <li>
-              <a href="#stack" class="nav-link stack">Tech Stack</a>
+              <a href="#stack" class="header__nav-link header__nav-link-stack"
+                >Tech Stack</a
+              >
             </li>
             <li>
-              <a href="#projects" class="nav-link projects">Projects</a>
+              <a
+                href="#projects"
+                class="header__nav-link header__nav-link-projects"
+                >Projects</a
+              >
             </li>
-
             <li>
-              <a href="#contact" class="nav-link contact">Contact</a>
+              <a
+                href="#contact"
+                class="header__nav-link header__nav-link-contact"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
         <div>
-          <ul class="nav-logos absolute">
+          <ul class="header__nav-media">
             <li>
               <a href="https://github.com/TEZv">
-                <img src="../../assets/header/Github.svg" alt="" />
+                <img
+                  src="../../assets/header/github-logo.svg"
+                  alt="Github platform logo image"
+                />
               </a>
             </li>
             <li>
               <a href="https://twitter.com/OksanaKolisnyk">
-                <img src="../../assets/header/X.svg" alt="" />
+                <img
+                  src="../../assets/header/x-twitter-logo.svg"
+                  alt="X (Twitter) social media logo image"
+                />
               </a>
             </li>
             <li>
               <a href="https://www.linkedin.com/in/oksana-kolisnyk-0b9632247">
-                <img src="../../assets/header/linkedin.svg" alt="" />
+                <img
+                  src="../../assets/header/linkedin-logo.svg"
+                  alt="LinkedIn social media logo image"
+                />
               </a>
             </li>
           </ul>
@@ -53,10 +73,10 @@
       </div>
     </nav>
   </div>
-  <div class="theme-switch-wrapper">
+  <div class="theme-switch__wrapper">
     <label class="theme-switch" for="checkbox">
       <input type="checkbox" id="checkbox" onclick="toggleImage()" />
-      <div class="slider round"></div>
+      <div class="slider slider-round"></div>
     </label>
   </div>
   <div id="home"></div>
