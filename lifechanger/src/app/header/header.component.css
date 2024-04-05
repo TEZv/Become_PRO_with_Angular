@@ -15,7 +15,6 @@
     top: 2.6em;
     left: 20.8em;
     width: 76rem;
-    /* height: 59px; */
     height: 2em;
     & .header__logo {
       height: 5.4em;
@@ -36,7 +35,6 @@
         justify-content: space-between;
         align-items: center;
         width: 40em;
-        /* height: 26px; */
         height: 1em;
         margin-bottom: 0.4em;
         margin-right: 2.2em;
