@@ -64,17 +64,38 @@
       display: inline-block;
       width: 3.8em;
       height: 2.1em;
+      & input {
+        display: none;
+      }
       & .slider {
         background-color: var(--lightButtonUnchecked);
-        -webkit-transition: 0.4s;
-        transition: 0.4s;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        cursor: pointer;
       }
       & .slider-round {
         border-radius: 34px;
         &:before {
+          content: "";
+          position: absolute;
+          bottom: 4px;
+          left: 4px;
+          width: 26px;
+          height: 26px;
           border-radius: 50%;
+          transition: 0.4s;
+          background-color: #fff;
         }
       }
     }
+  }
+  & input:checked + .slider {
+    background-color: var(--primary-color);
+  }
+  & input:checked + .slider:before {
+    transform: translateX(26px);
   }
 }
