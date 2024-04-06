@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HeroComponent } from './hero/hero.component';
 
 const routes: Routes = [
+  { path: '', component: HeroComponent },
   { path: 'home', component: HeroComponent },
   // The below names of the Components will be changed
   { path: 'about', component: HeroComponent },
