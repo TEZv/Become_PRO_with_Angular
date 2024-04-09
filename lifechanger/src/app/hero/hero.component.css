@@ -14,7 +14,10 @@
         font-weight: 700;
         line-height: 1.25;
         letter-spacing: -1px;
-        & > span {
+        & .hero__heading-break {
+          display: block;
+        }
+        & > .hero__heading-gradient {
             background: linear-gradient(
               90deg,
               var(--dark-purple) 30%,

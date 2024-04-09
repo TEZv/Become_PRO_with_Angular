@@ -14,25 +14,25 @@
         <div>
           <ul class="header__nav-links">
             <li>
-              <a routerLink="/home" class="header__nav-link">Home</a>
+              <a [routerLink]="['/']" class="header__nav-link">Home</a>
             </li>
             <li>
               <a
-                routerLink="/about"
+                [routerLink]="['/about']"
                 class="header__nav-link header__nav-link-about"
                 >About</a
               >
             </li>
             <li>
               <a
-                routerLink="/tech-stack"
+                [routerLink]="['/tech-stack']"
                 class="header__nav-link header__nav-link-stack"
                 >Tech Stack</a
               >
             </li>
             <li>
               <a
-                routerLink="/projects"
+                [routerLink]="['/projects']"
                 class="header__nav-link header__nav-link-projects"
                 >Projects</a
               >
