@@ -1,0 +1,60 @@
+.experience-container {
+  height: 75px;
+}
+
+.h4-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  h4 {
+    color: var(--dark-heading);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 1px;
+  }
+  .btn-work {
+    font-weight: 600;
+    font-size: 9px;
+    font-style: normal;
+    width: 84px;
+    height: 24px;
+    background-color: var(--light-white);
+    color: var(--green);
+    border: none;
+    border-radius: 30px;
+  }
+}
+.work-container {
+  height: 75px;
+}
+
+.div1-experience {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div2-experience {
+  display: flex;
+  gap: 20px;
+}
+.p-work {
+  color: var(--light-Content);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+
+.span-gap1 {
+  margin-left: 32px;
+}
+
+.line {
+  height: 2px;
+  width: 696px;
+  flex-shrink: 0;
+  background: var(--colors-grey);
+}

@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
+import { BiographyComponent } from './biography/biography.component';
+import { ExperienceInfoComponent } from './experience-info/experience-info.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { HeroComponent } from './hero/hero.component';
     FooterComponent,
     HeaderComponent,
     HeroComponent,
+    BiographyComponent,
+    ExperienceInfoComponent,
   ],
   imports: [
     BrowserModule,
