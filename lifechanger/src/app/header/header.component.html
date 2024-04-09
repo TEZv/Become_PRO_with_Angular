@@ -14,59 +14,28 @@
         <div>
           <ul class="header__nav-links">
             <li>
-              <a href="#" class="header__nav-link">Home</a>
+              <a [routerLink]="['/home']" class="header__nav-link">Home</a>
             </li>
             <li>
-              <a href="#about" class="header__nav-link header__nav-link-about"
+              <a
+                [routerLink]="['/about']"
+                class="header__nav-link header__nav-link-about"
                 >About</a
               >
             </li>
             <li>
-              <a href="#stack" class="header__nav-link header__nav-link-stack"
+              <a
+                [routerLink]="['/tech-stack']"
+                class="header__nav-link header__nav-link-stack"
                 >Tech Stack</a
               >
             </li>
             <li>
               <a
-                href="#projects"
+                [routerLink]="['/projects']"
                 class="header__nav-link header__nav-link-projects"
                 >Projects</a
               >
-            </li>
-            <li>
-              <a
-                href="#contact"
-                class="header__nav-link header__nav-link-contact"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="header__nav-media">
-            <li>
-              <a href="https://github.com/TEZv">
-                <img
-                  src="../../assets/header/github-logo.svg"
-                  alt="Github platform logo image"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/OksanaKolisnyk">
-                <img
-                  src="../../assets/header/x-twitter-logo.svg"
-                  alt="X (Twitter) social media logo image"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/oksana-kolisnyk-0b9632247">
-                <img
-                  src="../../assets/header/linkedin-logo.svg"
-                  alt="LinkedIn social media logo image"
-                />
-              </a>
             </li>
           </ul>
         </div>
@@ -79,5 +48,4 @@
       <div class="slider slider-round"></div>
     </label>
   </div>
-  <div id="home"></div>
 </header>

@@ -6,20 +6,22 @@
 
 :root {
   --colors-grey: #ebeaed;
+  --background-color: #636e005b;
   --colors-heading: #1e0e62;
   --black: #000;
   --black-white: #000;
   --white: #fff;
   --soft-white: #fff;
-  --pink: #ee03ab;
+  --pink: #982fee;
   --purple: #a270ff;
-  --dark-purple: #3b237e;
+  --dark-purple: #000255;
   --greenGreen: #018c0f;
   --green: rgb(6, 21, 5);
   --dark-content: #666;
   --dark-link: #666;
   --lightButtonChecked: #871781;
   --lightButtonUnchecked: #ccc;
+  --h1-back: #e0e0b231;
   --dark-heading: #666;
   --light-white: #d7ffe0;
   --light-Content: #a7a7a7;
@@ -29,8 +31,9 @@
   --font-family-body: "Poppins", sans-serif;
   --font-family-header-nav-links: "DM Sans", sans-serif;;
   --box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
-  --font-weight: 400;
+  --font-weight-400: 400;
   --font-weight-500: 500;
+  --font-size-18: 18px;
 }
 * {
   padding: 0px;
@@ -43,6 +46,7 @@ body {
   align-items: center;
   justify-content: center;
   font-family: var(--font-family-body);
+  background-color: var(--background-color);
 }
 
 a {
