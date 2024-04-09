@@ -8,7 +8,6 @@ const routes: Routes = [
   { path: 'home', component: HeroComponent },
   {path:'about', component:BiographyComponent},
   // The below names of the Components will be changed
-  { path: 'about', component: HeroComponent },
   { path: 'tech-stack', component: HeroComponent },
   { path: 'projects', component: HeroComponent }
 ];
