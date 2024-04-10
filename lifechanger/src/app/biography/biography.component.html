@@ -1,0 +1,25 @@
+<div class="biography">
+  <div class="about">
+    <h2>About Me</h2>
+    <p>
+      The Generator App is an online tool that helps you to export ready-made
+      templates ready to work as your future website. It helps you to combine
+      slides, panels and other components and export it as a set of static
+      files: HTML/CSS/JS.
+    </p>
+  </div>
+  <div *ngIf="this.isAnyWorkType()" class="work">
+    <h2>Work Experience</h2>
+    <app-experience-info
+      *ngFor="let item of filterByWork()"
+      [experienceInfo]="item"
+    ></app-experience-info>
+  </div>
+  <div *ngIf="this.isAnyEducationType()" class="education">
+    <h2>Education</h2>
+    <app-experience-info
+      *ngFor="let item of filterByEducation()"
+      [experienceInfo]="item"
+    ></app-experience-info>
+  </div>
+</div>
