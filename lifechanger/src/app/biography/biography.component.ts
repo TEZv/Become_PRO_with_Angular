@@ -11,20 +11,20 @@ import {
   styleUrl: './biography.component.css',
 })
 export class BiographyComponent {
-  workExperienceInfo: ExperienceInfo[] = [];
+  workExperienceInfos: ExperienceInfo[] = [];
   constructor(private readonly experienceInfoService: ExperienceInfoService) {
-    this.workExperienceInfo =
+    this.workExperienceInfos =
       this.experienceInfoService.GetWorkExperienceInfos();
   }
 
   isAnyWorkType(): boolean {
-    return this.workExperienceInfo.some(
+    return this.workExperienceInfos.some(
       (info) => info.experienceType === ExperienceType.Work
     );
   }
 
   isAnyEducationType(): boolean {
-    return this.workExperienceInfo.some(
+    return this.workExperienceInfos.some(
       (info) => info.experienceType === ExperienceType.Education
     );
   }
@@ -38,6 +38,6 @@ export class BiographyComponent {
   }
 
   private filterByType(type: ExperienceType): ExperienceInfo[] {
-    return this.workExperienceInfo.filter((info) => info.experienceType === type);
+    return this.workExperienceInfos.filter((info) => info.experienceType === type);
   }
 }
