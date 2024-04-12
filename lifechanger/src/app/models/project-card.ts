@@ -1,5 +1,8 @@
 export interface ProjectCardsInfo {
-  image: string;
+  imageAndAlt: {
+    image: string;
+    alt: string;
+  };
   title: string;
   description: string;
   techStack: string[];

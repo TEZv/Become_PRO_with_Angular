@@ -1,58 +1,42 @@
-.projects__section-container {
-  & h2 {
+.projects {
+  & .projects__heading {
     color: var(--solid-heading);
     font-size: 2.6em;
     line-height: 1.2;
-  }
-  & h2.projects__h2 {
     padding: 4.6em 0 0 0.4em;
   }
-  & .projects__p {
+  & .projects__description {
     color: var(--dark-content);
     line-height: 1.2;
-    font-size: 20px;
-    margin: 16px 20px 30px 18px;
+    font-size: 1.2em;
+    margin: 1em 1.2em 1.4em 1em;
   }
-  & .projects__div-cards-container {
+  & .projects__swiper-container {
+    width: 100%;
+    height: 22em;
+    overflow-y: auto;
+    margin: 0 0 -3.8em 0em;
+    & .projects__slider-container {
+      width: 100%;
+      height: 18.4em;
+    }
+  }
+  & .projects__card {
+    text-align: center;
+    font-size: 1.4em;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 80em;
-    margin: 50px 30px;
-    gap: 3.6em;
-    & img {
-      width: 100px;
-      height: 100px;
-    }
-    & .projects__swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      /* Centering content */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
   }
-}
-.projects__slider-container {
-  overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap; /* Prevent children from wrapping */
-  width: 100%; /* Adjust the width */
-  height: 18.1em; /* Adjust the height */
-}
-
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 1.4em;
-  /* Centering content */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  & ::-webkit-scrollbar {
+    width: 0.1em;
+  }
+  & ::-webkit-scrollbar-thumb {
+    background-color: var(--lightButtonUnchecked);
+    border: 1px solid var(--light-Content);
+    border-radius: 1em;
+  }
+  & ::-webkit-scrollbar-track {
+    background: var(--colors-grey);
+  }
 }
