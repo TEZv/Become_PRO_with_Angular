@@ -29,15 +29,15 @@ export class BiographyComponent {
     );
   }
 
-  filterByEducation(): ExperienceInfo[] {
-    return this.filterByType(ExperienceType.Education);
+  filterExperienceByEducation(): ExperienceInfo[] {
+    return this.filterExperienceByType(ExperienceType.Education);
   }
 
-  filterByWork(): ExperienceInfo[] {
-    return this.filterByType(ExperienceType.Work);
+  filterExperienceByWork(): ExperienceInfo[] {
+    return this.filterExperienceByType(ExperienceType.Work);
   }
 
-  private filterByType(type: ExperienceType): ExperienceInfo[] {
+  private filterExperienceByType(type: ExperienceType): ExperienceInfo[] {
     return this.workExperienceInfos.filter((info) => info.experienceType === type);
   }
 }

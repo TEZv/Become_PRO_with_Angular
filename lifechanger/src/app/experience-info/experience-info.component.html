@@ -10,7 +10,7 @@
           <img src="../../assets/experience-info/grid.svg" />
           {{ experienceInfo.project }}
         </p>
-        <p class="p-work">
+        <p *ngIf="experienceInfo.location" class="p-work">
           <img src="../../assets/experience-info/location.svg" />
           {{ experienceInfo.location }}
         </p>

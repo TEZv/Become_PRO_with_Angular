@@ -11,14 +11,14 @@
   <div *ngIf="this.isAnyWorkType()" class="biography_work">
     <h2>Work Experience</h2>
     <app-experience-info
-      *ngFor="let item of filterByWork()"
+      *ngFor="let item of filterExperienceByWork()"
       [experienceInfo]="item"
     ></app-experience-info>
   </div>
   <div *ngIf="this.isAnyEducationType()" class="biography_education">
     <h2>Education</h2>
     <app-experience-info
-      *ngFor="let item of filterByEducation()"
+      *ngFor="let item of filterExperienceByEducation()"
       [experienceInfo]="item"
     ></app-experience-info>
   </div>
