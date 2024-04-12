@@ -65,7 +65,8 @@ export class ProjectCardsService {
       grid creation and implementation via js, DOM manipulation, Event handlers.",
         techStack: [' HTML', ' Native CSS', ' Javascript'],
         previewLiveLink: 'https://tezv-etch-a-sketch.netlify.app/',
-        githubCodeLink: 'https://github.com/TEZv/TheOdinProjects/tree/main/Etch-a-Sketch',
+        githubCodeLink:
+          'https://github.com/TEZv/TheOdinProjects/tree/main/Etch-a-Sketch',
       },
       {
         imageAndAlt: {
@@ -78,7 +79,8 @@ export class ProjectCardsService {
           IIFEs, Factory Functions, Module Design Pattern, Minimax AI algorithm, DOM manipulation, Event handlers.",
         techStack: [' HTML', ' Native CSS', ' Javascript'],
         previewLiveLink: 'https://tezv-t3-tic-tac-toe.netlify.app/',
-        githubCodeLink: 'https://github.com/TEZv/TheOdinProjects/tree/main/Tic-Tac-Toe',
+        githubCodeLink:
+          'https://github.com/TEZv/TheOdinProjects/tree/main/Tic-Tac-Toe',
       },
       {
         imageAndAlt: {
@@ -87,11 +89,12 @@ export class ProjectCardsService {
         },
         title: 'Quote Machine',
         description:
-        "The part of a freeCodeCamp (fCC)'s course workout. The implementations that the website has include: \
+          "The part of a freeCodeCamp (fCC)'s course workout. The implementations that the website has include: \
         Arrays, Factory Functions, Module Design Pattern, DOM manipulation, Math.random().",
         techStack: [' HTML', ' CSS', ' Javascript'],
         previewLiveLink: 'https://tezv-quote-machine.netlify.app/',
-        githubCodeLink: 'https://github.com/TEZv/freeCodeCamp-Projects/tree/main/frontEndCertificate/quoteMachine',
+        githubCodeLink:
+          'https://github.com/TEZv/freeCodeCamp-Projects/tree/main/frontEndCertificate/quoteMachine',
       },
     ];
   }
