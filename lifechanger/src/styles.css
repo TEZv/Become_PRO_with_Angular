@@ -6,11 +6,7 @@
 
 :root {
   --colors-grey: #ebeaed;
-<<<<<<< HEAD
   --background-color: #c7cba4;
-=======
-  --background-color: #636e005b;
->>>>>>> ed4b66eaf65df4723b31e1c4dff0a9847498421f
   --colors-heading: #1e0e62;
   --black: #000;
   --black-white: #000;
@@ -35,10 +31,7 @@
   --font-family-body: "Poppins", sans-serif;
   --font-family-header-nav-links: "DM Sans", sans-serif;;
   --box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
-<<<<<<< HEAD
   --font-weight-300: 300;
-=======
->>>>>>> ed4b66eaf65df4723b31e1c4dff0a9847498421f
   --font-weight-400: 400;
   --font-weight-500: 500;
   --font-size-18: 18px;
