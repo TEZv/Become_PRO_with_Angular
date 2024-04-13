@@ -6,7 +6,7 @@ import { StackComponent } from './stack/stack.component';
 const routes: Routes = [
   { path: '', component: HeroComponent },
   { path: 'home', component: HeroComponent },
-  // The below names of the Components will be changed
+  {path:'about', component:BiographyComponent},
   { path: 'about', component: HeroComponent },
   { path: 'tech-stack', component: StackComponent },
   { path: 'projects', component: HeroComponent }

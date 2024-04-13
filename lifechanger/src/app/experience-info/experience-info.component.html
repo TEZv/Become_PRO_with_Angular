@@ -1,0 +1,26 @@
+<section class="experience">
+  <div class="experience_h4-container">
+    <h4>{{ experienceInfo.title }}</h4>
+    <button class="btn-work">{{ experienceInfo.workType }}</button>
+  </div>
+  <div class="experience_work">
+    <div class="experience_div1">
+      <div class="experience_div2">
+        <p class="p-work">
+          <img src="../../assets/experience-info/grid.svg" />
+          {{ experienceInfo.project }}
+        </p>
+        <p *ngIf="experienceInfo.location" class="p-work">
+          <img src="../../assets/experience-info/location.svg" />
+          {{ experienceInfo.location }}
+        </p>
+      </div>
+      <p class="p-work">
+        <img src="../../assets/experience-info/calendar.svg" />
+        {{ experienceInfo.startDate | date }} -
+        {{ experienceInfo.endDate | date }}
+      </p>
+    </div>
+  </div>
+</section>
+<div class="line"></div>
