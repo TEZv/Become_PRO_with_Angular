@@ -8,8 +8,8 @@ export class ProjectCardsService {
   GetProjectCardsInfos(): ProjectCardsInfo[] {
     return [
       {
-        imageAndAlt: {
-          image: '../../assets/projects/ua-delivery-project.png',
+        image: {
+          path: '../../assets/projects/ua-delivery-project.png',
           alt: 'Image of UA delivery project',
         },
         title: 'UA-delivery',
@@ -28,8 +28,8 @@ export class ProjectCardsService {
         githubCodeLink: 'https://github.com/TEZv/UA-delivery',
       },
       {
-        imageAndAlt: {
-          image: '../../assets/projects/qalight-project.png',
+        image: {
+          path: '../../assets/projects/qalight-project.png',
           alt: 'Image of QALight project',
         },
         title: 'QALight',
@@ -41,8 +41,8 @@ export class ProjectCardsService {
         githubCodeLink: 'https://github.com/TEZv/TEZv.github.io',
       },
       {
-        imageAndAlt: {
-          image: '../../assets/projects/lifechanger-project.png',
+        image: {
+          path: '../../assets/projects/lifechanger-project.png',
           alt: 'Image of Lifechanger project',
         },
         title: 'Lifechanger',
@@ -55,8 +55,8 @@ export class ProjectCardsService {
           'https://github.com/TEZv/Lifechanger/tree/main/portfolio_darkmode',
       },
       {
-        imageAndAlt: {
-          image: '../../assets/projects/etch-a-sketch-project.png',
+        image: {
+          path: '../../assets/projects/etch-a-sketch-project.png',
           alt: 'Image of Etch-a-Sketch project',
         },
         title: 'Etch-a-Sketch',
@@ -69,8 +69,8 @@ export class ProjectCardsService {
           'https://github.com/TEZv/TheOdinProjects/tree/main/Etch-a-Sketch',
       },
       {
-        imageAndAlt: {
-          image: '../../assets/projects/tic-tac-toe-project.png',
+        image: {
+          path: '../../assets/projects/tic-tac-toe-project.png',
           alt: 'Image of Tic Tac Toe project',
         },
         title: 'Tic Tac Toe',
@@ -83,8 +83,8 @@ export class ProjectCardsService {
           'https://github.com/TEZv/TheOdinProjects/tree/main/Tic-Tac-Toe',
       },
       {
-        imageAndAlt: {
-          image: '../../assets/projects/quote-machine-project.png',
+        image: {
+          path: '../../assets/projects/quote-machine-project.png',
           alt: 'Image of Quote Machine project',
         },
         title: 'Quote Machine',

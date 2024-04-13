@@ -1,16 +1,15 @@
 <div class="project-card__container">
   <img
-    [src]="projectCardsInfo.imageAndAlt.image"
-    [alt]="projectCardsInfo.imageAndAlt.alt"
+    [src]="projectCardsInfo.image.path"
+    [alt]="projectCardsInfo.image.alt"
   />
-  <!-- NEEDS alt, THINK OF THAT IMPLEMENTATION -->
   <div class="project-card__div-content">
     <h3 class="project-card__h3-title">{{ projectCardsInfo.title }}</h3>
     <p class="project-card__p-description">
       {{ projectCardsInfo.description }}
     </p>
     <p>
-       <u>Tech stack</u><span>{{ projectCardsInfo.techStack }}</span>
+       <u>&lt;Tech stack&gt;</u><span>{{ projectCardsInfo.techStack }}</span>
     </p>
     <div class="project-card__div-links">
       <div class="project-card__div-link">

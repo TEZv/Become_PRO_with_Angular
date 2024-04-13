@@ -1,6 +1,6 @@
 export interface ProjectCardsInfo {
-  imageAndAlt: {
-    image: string;
+  image: {
+    path: string;
     alt: string;
   };
   title: string;
