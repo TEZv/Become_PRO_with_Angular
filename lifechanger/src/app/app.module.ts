@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectCardComponent } from './projects/project-card/project-card.component';
+import { BiographyComponent } from './biography/biography.component';
+import { ExperienceInfoComponent } from './experience-info/experience-info.component';
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import { ProjectCardComponent } from './projects/project-card/project-card.compo
     HeroComponent,
     ProjectsComponent,
     ProjectCardComponent,
+    BiographyComponent,
+    ExperienceInfoComponent,
   ],
   imports: [
     BrowserModule,

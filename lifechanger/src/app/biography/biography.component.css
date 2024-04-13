@@ -1,0 +1,27 @@
+.biography {
+  margin-top: 7.6em;
+  width: 44em;
+  & .biography_about p {
+    color: var(--dark-content);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 44em;
+    height: 6.5em;
+  }
+  & .biography_education,
+  .biography_about {
+    padding: 2.37em 0 2.37em 1.56em;
+  }
+  & .biography_work {
+    padding-left: 1.56em;
+  }
+
+  h2 {
+    color: var(--solid-heading);
+    font-size: 42px;
+  }
+}
+
+
