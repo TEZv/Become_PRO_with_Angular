@@ -10,6 +10,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ProjectCardComponent } from './projects/project-card/project-card.component';
 import { BiographyComponent } from './biography/biography.component';
 import { ExperienceInfoComponent } from './experience-info/experience-info.component';
+import { StackComponent } from './stack/stack.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { ExperienceInfoComponent } from './experience-info/experience-info.compo
     ProjectCardComponent,
     BiographyComponent,
     ExperienceInfoComponent,
+    StackComponent,
   ],
   imports: [
     BrowserModule,
