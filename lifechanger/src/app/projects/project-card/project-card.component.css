@@ -1,9 +1,6 @@
 .project-card__container {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  border-radius: 20px;
-  overflow: hidden;
   & .project-card__div-content {
     display: flex;
     flex-direction: column;
@@ -32,14 +29,14 @@
     & .project-card__div-links,
     .project-card__div-link {
       display: flex;
-      gap: 48px;
+      gap: 2em;
       justify-content: center;
       margin-top: 0.14em;
     }
     & .project-card__div-link {
-      gap: 10px;
       & img {
         margin-top: 0.1em;
+        margin-right: -1.4em;
         width: 20px;
         height: 20px;
       }
