@@ -6,7 +6,7 @@
     margin-top: 1.6em;
     width: 38em;
     & h4 {
-      color: var(--solid-heading);
+      color: var(--color-dark-slate-blue);
       font-size: 1.2em;
       font-weight: var(--font-weight-400);
       line-height: 1.2;
@@ -16,10 +16,10 @@
       font-weight: var(--font-weight-600);
       font-size: 0.6em;
       width: 10em;
-      background-color: var(--light-white);
-      color: var(--solid-heading);
+      background-color: var(--color-pale-mint);
+      color: var(--color-dark-slate-blue);
       border: none;
-      box-shadow: 1px 2px 1px var(--dark-heading);
+      box-shadow: 1px 2px 1px var(--color-charcoal);
       border-radius: 30px;
     }
   }
@@ -36,7 +36,7 @@
       }
     }
     & p {
-      color: var(--dark-heading);
+      color: var(--color-charcoal);
       font-size: 0.75em;
       line-height: 2.2;
       letter-spacing: 0.08em;
@@ -45,5 +45,5 @@
 }
 .work-experience__line-below {
   height: 0.12em;
-  background: var(--light-white);
+  background: var(--color-pale-mint);
 }
