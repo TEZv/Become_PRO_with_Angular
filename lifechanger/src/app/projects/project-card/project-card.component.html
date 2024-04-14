@@ -1,0 +1,29 @@
+<div class="project-card__container">
+  <img
+    [src]="projectCardsInfo.image.path"
+    [alt]="projectCardsInfo.image.alt"
+  />
+  <div class="project-card__div-content">
+    <h3 class="project-card__h3-title">{{ projectCardsInfo.title }}</h3>
+    <p class="project-card__p-description">
+      {{ projectCardsInfo.description }}
+    </p>
+    <p>
+       <u>&lt;Tech stack&gt;</u><span>{{ projectCardsInfo.techStack }}</span>
+    </p>
+    <div class="project-card__div-links">
+      <div class="project-card__div-link">
+        <img src="../../../assets/projects/link-logo.svg" alt="Link logo" />
+        <a [href]="projectCardsInfo.previewLiveLink" target="_blank"
+          >Live Preview</a
+        >
+      </div>
+      <div class="project-card__div-link">
+        <img src="../../../assets/projects/github-logo.svg" alt="Github logo" />
+        <a [href]="projectCardsInfo.githubCodeLink" target="_blank"
+          >View Code</a
+        >
+      </div>
+    </div>
+  </div>
+</div>

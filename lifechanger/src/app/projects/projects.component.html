@@ -1,0 +1,14 @@
+<section class="projects">
+  <h2 class="projects__heading" id="projects">Projects</h2>
+  <p class="projects__description">Things I've built so far</p>
+
+  <div class="projects__swiper-container swiper-container">
+    <div class="projects__slider-container swiper-wrapper">
+      <app-project-card
+        *ngFor="let card of projectCardInfos"
+        [projectCardsInfo]="card"
+        class="projects__card swiper-slide"
+      ></app-project-card>
+    </div>
+  </div>
+</section>
