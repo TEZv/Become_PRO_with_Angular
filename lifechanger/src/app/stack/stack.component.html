@@ -1,7 +1,7 @@
 <section class="stack">
-  <h2 class="stack_h2">My Tech Stack</h2>
-  <p class="stack_p">Technologies I've been working with recently</p>
-  <div class="stack_container">
+  <h2 class="stack__h2">My Tech Stack</h2>
+  <p class="stack__p">Technologies I've been working with recently</p>
+  <div class="stack__div-container">
     <img *ngFor="let item of this.getImages()" [src]="item[0]" [alt]="item[1]" />
   </div>
 </section>
