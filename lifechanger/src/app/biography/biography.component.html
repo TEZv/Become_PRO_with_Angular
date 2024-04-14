@@ -1,24 +1,29 @@
-<section class="biography">
-  <div class="biography_about">
-    <h2>About Me</h2>
-    <p>
-      The Generator App is an online tool that helps you to export ready-made
-      templates ready to work as your future website. It helps you to combine
-      slides, panels and other components and export it as a set of static
-      files: HTML/CSS/JS.
-    </p>
+<section class="biography__section-container">
+  <div>
+    <div class="biography__div-about">
+      <h2>About Me</h2>
+      <p>
+        Hi there! My name is Oksana and I'm passionate about web development.<br />
+        I have experience working with various technologies<br />
+        (see also <a [routerLink]="['/tech-stack']">Tech Stack</a> tab) and
+        frameworks to create dynamic and interactive websites. <br />
+        Some of my recent projects are: the
+        <a [routerLink]="['/projects']"><span> QALight project</span></a> and
+        <span>this Angular portfolio website.</span>
+      </p>
+    </div>
+    <div *ngIf="this.isAnyEducationType()" class="biography__div-education">
+      <h2>Education</h2>
+      <app-experience-info
+        *ngFor="let item of filterExperienceByEducation()"
+        [experienceInfo]="item"
+      ></app-experience-info>
+    </div>
   </div>
-  <div *ngIf="this.isAnyWorkType()" class="biography_work">
+  <div *ngIf="this.isAnyWorkType()" class="biography__div-work">
     <h2>Work Experience</h2>
     <app-experience-info
       *ngFor="let item of filterExperienceByWork()"
-      [experienceInfo]="item"
-    ></app-experience-info>
-  </div>
-  <div *ngIf="this.isAnyEducationType()" class="biography_education">
-    <h2>Education</h2>
-    <app-experience-info
-      *ngFor="let item of filterExperienceByEducation()"
       [experienceInfo]="item"
     ></app-experience-info>
   </div>
