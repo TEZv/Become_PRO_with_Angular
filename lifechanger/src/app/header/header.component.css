@@ -51,7 +51,7 @@
   & .theme-switch__div-wrapper {
     position: relative;
     cursor: pointer;
-    top: -2.2em;
+    top: -2.4em;
     right: 22em;
     & .theme-switch__label {
       position: relative;
@@ -95,6 +95,14 @@
   }
 }
 
+@media screen and (max-width: 1250px) {
+  .header {
+    .header__nav {
+      margin-top: -1em;
+      gap: .4em;
+    }
+  }
+}
 @media screen and (max-width: 768px) {
   .header {
     .header__nav {

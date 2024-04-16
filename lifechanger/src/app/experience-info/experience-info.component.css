@@ -47,3 +47,108 @@
   height: 0.12em;
   background: var(--color-pale-mint);
 }
+
+@media screen and (max-width: 1250px) {
+  .work-experience__section {
+    height: 2.8em;
+    & .work-experience__h4-container {
+      margin-top: 1.2em;
+      width: 28em;
+      & h4 {
+        font-size: 0.8em;
+        padding: 0.25em;
+      }
+    }
+  }
+  .work-experience__line-below {
+    margin-top: 1.6em;
+  }
+}
+@media screen and (max-width: 992px) {
+  .work-experience__section {
+    height: 2.8em;
+    & .work-experience__h4-container {
+      width: 23.4em;
+      & h4 {
+        font-size: 0.9em;
+        padding: 0.1em;
+      }
+      & .work-experience__btn {
+        font-size: 0.7em;
+        width: 6em;
+        height: 2em;
+      }
+    }
+    & .work-experience__div-outer {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      & .work-experience__div-project-location {
+        width: 23em;
+      }
+    }
+  }
+  .work-experience__line-below {
+    margin-top: 2.4em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .work-experience__section {
+    height: 3em;
+    & .work-experience__h4-container {
+      width: 10.4em;
+      & h4 {
+        font-size: 0.7em;
+      }
+      & .work-experience__btn {
+        text-wrap: nowrap;
+        font-size: 0.5em;
+        padding: 0 1em;
+        width: 10em;
+        height: 2em;
+      }
+    }
+    & .work-experience__div-outer {
+      & .work-experience__div-project-location {
+        justify-content: center;
+        width: 12.6em;
+      }
+      & p {
+        line-height: 1.2;
+        letter-spacing: -0.08em;
+      }
+    }
+  }
+  .work-experience__line-below {
+    margin-top: 1.8em;
+  }
+}
+@media screen and (max-width: 480px) {
+  .work-experience__section {
+    height: 0.2em;
+    margin-top: -1.4em;
+    & .work-experience__h4-container {
+      width: 22em;
+      & h4 {
+        font-size: 0.9em;
+        padding: 0.1em;
+      }
+      & .work-experience__btn {
+        font-size: 0.7em;
+        width: 6em;
+        height: 2em;
+        position: relative;
+        top: 2.4em;
+        left: -5em;
+      }
+    }
+    & .work-experience__div-outer {
+      & .work-experience__div-project-location {
+        justify-content: flex-start;
+        width: 22em;
+      }
+    }
+  }
+  .work-experience__line-below {
+    margin-top: 4em;
+  }
+}

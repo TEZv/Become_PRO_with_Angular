@@ -105,8 +105,9 @@
       margin-left: 5rem;
     }
     & .footer__logo {
-      height: 50%;
+      height: 35%;
       & .footer__image {
+        margin-top: 1.8em;
         height: 85%;
         margin-left: 7.5em;
       }

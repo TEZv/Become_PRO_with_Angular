@@ -94,6 +94,7 @@
   .hero__container {
     justify-content: center;
     margin-right: 20px;
+    margin-bottom: 14.8em;
     & .hero__left-side {
       width: 18%;
       & .hero__heading {
