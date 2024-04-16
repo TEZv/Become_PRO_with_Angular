@@ -1,5 +1,6 @@
 .project-card__container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   & .project-card__div-content {
     display: flex;
@@ -24,10 +25,10 @@
       font-size: 1.4em;
       font-weight: var(--font-weight-500);
       line-height: 1;
-      margin-left: 0.4em;
+      margin: 0 auto;
     }
     & .project-card__div-links,
-    .project-card__div-link {
+    & .project-card__div-link {
       display: flex;
       gap: 2em;
       justify-content: center;
@@ -37,8 +38,8 @@
       & img {
         margin-top: 0.1em;
         margin-right: -1.4em;
-        width: 20px;
-        height: 20px;
+        width: 0.85em;
+        height: 0.85em;
       }
       & a {
         color: var(--color-black);
@@ -53,11 +54,61 @@
   & img {
     width: 22em;
     height: 12em;
-    margin-top: -22px;
+    margin-top: -1.2em;
     object-fit: contain;
   }
   & p ~ p span {
     font-weight: var(--font-weight-400);
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .project-card__container {
+    flex-direction: column;
+    & img {
+      margin-top: -1em;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .project-card__container {
+    & .project-card__div-content {
+      & .project-card__p-description {
+        font-size: 0.55em;
+        width: 40em;
+        margin: auto;
+      }
+      .project-card__p-tech-stack {
+        font-size: 0.7em;
+      }
+    }
+    & p ~ p span {
+      font-size: 0.75rem;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .project-card__container {
+    & .project-card__div-content {
+      & .project-card__p-description {
+        width: 28.5em;
+      }
+      .project-card__p-tech-stack {
+        font-size: 0.5em;
+      }
+      & .project-card__div-link {
+        & a {
+          color: var(--color-black);
+          font-size: 0.8rem;
+        }
+      }
+    }
+    & img {
+      width: 15em;
+    }
+    & p ~ p span {
+      font-size: 0.5rem;
+    }
   }
 }
