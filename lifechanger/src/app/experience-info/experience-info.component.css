@@ -136,6 +136,7 @@
         font-size: 0.7em;
         width: 6em;
         height: 2em;
+        padding: 0 .7em;
         position: relative;
         top: 2.4em;
         left: -5em;
@@ -145,6 +146,10 @@
       & .work-experience__div-project-location {
         justify-content: flex-start;
         width: 22em;
+      }
+      & p {
+        line-height: 1.2;
+        letter-spacing: .04em;
       }
     }
   }

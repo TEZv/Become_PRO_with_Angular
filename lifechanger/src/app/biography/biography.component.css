@@ -91,7 +91,7 @@
 }
 @media screen and (max-width: 480px) {
   .biography__section-container {
-    margin: 8.2em 0 -5.5em 28.4em;
+    margin: 8.2em 0 -5.5em 27.4em;
     flex-direction: column;
     .biography__div-work {
       margin-top: -1em;
