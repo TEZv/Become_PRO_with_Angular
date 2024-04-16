@@ -45,7 +45,7 @@
         font-size: 1rem;
         text-decoration-line: underline;
         &:hover {
-          color: var(--color-rose-pink);
+          color: var(--color-rose-pink) !important;
         }
       }
     }

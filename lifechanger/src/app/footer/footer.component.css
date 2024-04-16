@@ -21,7 +21,7 @@
       display: flex;
       align-items: center;
       & .footer__container-link {
-        margin-right: 80px;
+        margin-right: 5em;
       }
       & .footer__nav-logos {
         display: flex;
@@ -37,7 +37,6 @@
   & p span:first-child {
     background: linear-gradient(
       180deg,
-
       var(--color-midnight-blue) 2.06%,
       var(--color-orchid) 100%
     );
@@ -52,135 +51,179 @@
   }
   & p {
     color: var(--color-charcoal);
-    font-size: var(--font-size-18);
-    margin-bottom: 12px;
-    margin-right: 20px;
+    font-size: 1.1em;
+    margin-bottom: 0.7em;
+    margin-right: 1.1em;
   }
   & .footer__container {
     display: flex;
     justify-content: space-between;
     height: 12em;
-    margin-top: 84px;
-    margin-bottom: -64px;
+    margin-top: 5em;
+    margin-bottom: -4em;
   }
   & .footer__nav-container {
     align-items: center;
     height: 1.5em;
-    margin-top: 44px;
+    margin-top: 2.8em;
   }
   & .footer__links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    width: 38em;
-    & .footer__link {
-      font-family: "DM Sans", sans-serif;
+    width: 30em;
+    & .footer__links-link {
       color: var(--color-dark-slate-blue);
       font-size: 1.1em;
     }
-    & .footer__link-phone {
-      line-height: 26px;
-      margin-left: 64px;
-    }
-    & .footer__link-mail {
+    & .footer__links-button {
       color: var(--color-dark-slate-blue);
+      font-size: 1.1em;
+      border: none;
+      padding: 0.4em;
+      border-radius: 1em;
+      cursor: pointer;
+      &:hover {
+        background: var(--color-charcoal);
+        color: var(--color-white);
+      }
+    }
+    & .footer__links-link-phone {
+      margin-left: 2em;
+    }
+    & .footer__links-link-mail {
+      color: var(--color-dark-slate-blue);
+      margin-left: 4em;
     }
   }
 }
 
 @media screen and (max-width: 1250px) {
   .footer {
-    width: 96%;
+    width: 90%;
+    & > img {
+      margin-left: 5rem;
+    }
     & .footer__logo {
-      width: 17.2em;
+      height: 50%;
+      & .footer__image {
+        height: 85%;
+        margin-left: 7.5em;
+      }
     }
     & .footer__nav-primary {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       & .footer__primary {
-        display: flex;
-        align-items: center;
-        & .footer__container-link {
-          margin-right: 80px;
-        }
-        & .footer__nav-logos {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          width: 8em;
-        }
+        width: 80%;
       }
-    }
-    & p span {
-      color: var(--color-orchid);
-    }
-    & p span:first-child {
-      background: linear-gradient(
-        180deg,
-  
-        var(--color-midnight-blue) 2.06%,
-        var(--color-orchid) 100%
-      );
-      background-clip: text;
-      background: linear-gradient(
-        -90deg,
-        var(--color-midnight-blue) 2.06%,
-        var(--color-orchid) 100%
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    & p {
-      color: var(--color-charcoal);
-      font-size: var(--font-size-18);
-      margin-bottom: 12px;
-      margin-right: 20px;
-    }
-    & .footer__container {
-      display: flex;
-      justify-content: space-between;
-      height: 12em;
-      margin-top: 84px;
-      margin-bottom: -64px;
-    }
-    & .footer__nav-container {
-      align-items: center;
-      height: 1.5em;
-      margin-top: 44px;
     }
     & .footer__links {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 38em;
-      & .footer__link {
-        font-family: "DM Sans", sans-serif;
-        color: var(--color-dark-slate-blue);
-        font-size: 1.1em;
+      width: 40em;
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .footer {
+    width: 70%;
+    margin-left: 6em;
+    & .footer__logo {
+      height: 44%;
+      margin-top: 3em;
+      & .footer__image {
+        height: 75%;
+        margin-right: 5em;
       }
-      & .footer__link-phone {
-        line-height: 26px;
-        margin-left: 64px;
+    }
+    & .footer__primary {
+      width: 80%;
+      & .footer__nav-logos {
+        flex-direction: column;
+        margin-right: 5em;
+        margin-left: -5em;
       }
-      & .footer__link-mail {
-        color: var(--color-dark-slate-blue);
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 50%;
+    margin-left: 15.4em;
+    & p {
+      font-size: 0.8em;
+    }
+    & .footer__logo {
+      height: 70%;
+      margin-top: 3em;
+      & .footer__image {
+        height: 40%;
+        width: 78%;
+        margin-right: 5.6em;
+      }
+    }
+    & .footer__primary {
+      width: 80%;
+      flex-direction: column;
+      & .footer__nav-logos {
+        flex-direction: row;
+        font-size: 0.8em;
+        margin-top: 10px;
+      }
+      & .footer__links {
+        width: 30em;
+        margin-right: -4em;
+        & .footer__links-link {
+          font-size: 0.8em;
+        }
+        & .footer__links-button {
+          font-size: 0.8em;
+          margin-left: 3em;
+        }
+        & .footer__links-link-mail {
+          position: relative;
+          right: 14em;
+          top: 1.2em;
+        }
+      }
+      & .footer__container-link {
+        margin-top: -2.4em;
+        justify-content: center;
       }
     }
   }
 }
 @media screen and (max-width: 480px) {
-  .header {
-    .header__nav {
-      & .header__logo {
-        height: 4em;
-        width: 13.5em;
-        & .header__logo-image {
-          width: 96%;
-        }
+  .footer {
+    width: 40%;
+    & .footer__logo {
+      position: relative;
+      top: 2em;
+      left: 5em;
+      & .footer__image {
+        margin-right: 5.6em;
       }
-      & .header__nav-container {
-        margin-left: -18em;
+    }
+    & .footer__primary {
+      width: 80%;
+      flex-direction: column;
+      & .footer__nav-logos {
+        flex-direction: column;
+        font-size: 0.8em;
+        padding-right: 2.4em;
+      }
+      & .footer__links {
+        & .footer__links-button {
+          margin-left: 12em;
+        }
+        & .footer__links-link-mail {
+          right: 16em;
+        }
+        & .footer__links-link-phone {
+          margin-right: 1em;
+        }
+        & .footer__links-link-blog {
+          position: relative;
+          top: 1.6em;
+          right: 10em;
+        }
       }
     }
   }
