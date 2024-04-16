@@ -12,6 +12,14 @@ export class ExperienceInfoService {
   GetWorkExperienceInfos(): ExperienceInfo[] {
     return [
       {
+        title: 'SEO Junior | Online',
+        location: 'Kyiv, Ukraine',
+        project: `Aweb agency`,
+        startDate: new Date('2024-05-20'),
+        experienceType: ExperienceType.Work,
+        workType: EmploymentType.FullTime,
+      },
+      {
         title: 'SEO Intern | Online',
         location: 'Kyiv, Ukraine',
         project: `Aweb agency`,
@@ -21,20 +29,11 @@ export class ExperienceInfoService {
         workType: EmploymentType.Internship,
       },
       {
-        title: 'Marketing/Web Development Intern | Online',
-        location: 'Maryland, United States',
-        project: `NOBEL Navigators`,
-        startDate: new Date('2024-04-13'),
-        endDate: new Date('2024-08-13'),
-        experienceType: ExperienceType.Work,
-        workType: EmploymentType.Internship,
-      },
-      {
         title: 'Operator of the dispensing point | Offline',
         location: 'Kyiv, Ukraine',
         project: `ROZETKA's retail`,
-        startDate: new Date('2021-06-30'),
-        endDate: new Date('2017-09-01'),
+        startDate: new Date('2023-10-06'),
+        endDate: new Date('2024-02-05'),
         experienceType: ExperienceType.Work,
         workType: EmploymentType.FullTime,
       },
