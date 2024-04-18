@@ -16,6 +16,9 @@
       font-size: 1.1em;
       line-height: 1.5;
       width: 34em;
+      & a {
+        color: var(--color-rose-pink);
+      }
     }
     & span {
       font-weight: var(--font-weight-600);

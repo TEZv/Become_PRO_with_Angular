@@ -78,6 +78,7 @@
     }
     & .footer__links-button {
       color: var(--color-dark-slate-blue);
+      background-color: var(--color-white);
       font-size: 1.1em;
       border: none;
       padding: 0.4em;

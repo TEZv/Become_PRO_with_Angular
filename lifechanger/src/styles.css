@@ -1,12 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
-/* -------------- `14-18.4` Change the colour names +, 
-                            make @media {] for various screens,
-                            and make dark styles 
-                            change the colour names for dark mode */
-
 :root {
   --color-silver: #ebeaed;
   --color-pistachio: #c7cba4;
+  --color-dark-black: #000;
   --color-black: #000;
   --color-white: #fff;
   --color-orchid: #982fee;
@@ -20,12 +15,29 @@
   --color-dark-grey: #a7a7a7;
   --color-dark-slate-blue: #42446e;
   --box-shadow-deep: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+  --border-outline: none;
+  --border-inline: none;
   --ff-body: "Poppins", sans-serif;
   --ff-header-nav-links: "DM Sans", sans-serif;
   --font-weight-300: 300;
   --font-weight-400: 400;
   --font-weight-500: 500;
   --font-weight-600: 600;
+}
+/* Dark mode styles */
+.dark-mode {
+  --color-silver: #333; 
+  --color-pistachio: #161616; 
+  --color-black: #2a7e3ecb;
+  --color-white: #21573994;
+  --color-orchid: #a648f3;
+  --color-lavender: #d7ffe0;
+  --color-midnight-blue: #3fb65bcb;
+  --color-charcoal: #babe;
+  --color-pale-mint: #21573994;
+  --color-dark-slate-blue: #cacba4;
+  --box-shadow-deep: 2px 2px 20px 0px rgb(215, 255, 224, 0.25);
+  --border-inline: 1px dashed #d7ffe0;
 }
 * {
   padding: 0px;

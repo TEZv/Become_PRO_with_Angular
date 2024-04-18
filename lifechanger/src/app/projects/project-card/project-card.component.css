@@ -16,6 +16,7 @@
     }
     .project-card__p-tech-stack {
       font-size: 0.8em;
+      color: var(--color-black);
     }
     & p span {
       color: var(--color-rose-pink);

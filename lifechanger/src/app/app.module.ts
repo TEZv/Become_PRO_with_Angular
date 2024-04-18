@@ -12,7 +12,6 @@ import { BiographyComponent } from './biography/biography.component';
 import { ExperienceInfoComponent } from './experience-info/experience-info.component';
 import { StackComponent } from './stack/stack.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +22,7 @@ import { StackComponent } from './stack/stack.component';
     ProjectCardComponent,
     BiographyComponent,
     ExperienceInfoComponent,
-    StackComponent,
+    StackComponent
   ],
   imports: [
     BrowserModule,
