@@ -1,41 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
-/* -------------- `14-18.4` Change the colour names, 
-                            make @media {] for various screens,
-                            and make dark styles 
-                            change the colour names for dark mode */     
-
 :root {
-  --colors-grey: #ebeaed;
-  --background-color: #c7cba4;
-  --colors-heading: #1e0e62;
-  --black: #000;
-  --black-white: #000;
-  --white: #fff;
-  --soft-white: #fff;
-  --pink: #982fee;
-  --purple: #a270ff;
-  --dark-purple: #000255;
-  --greenGreen: #018c0f;
-  --green: rgb(6, 21, 5);
-  --dark-content: #666;
-  --dark-link: #666;
-  --lightButtonChecked: #871781;
-  --lightButtonUnchecked: #ccc;
-  --h1-back: #e0e0b231;
-  --dark-heading: #666;
-  --light-white: #d7ffe0;
-  --light-Content: #a7a7a7;
-  --Solid-Heading: #42446e;
-  --solid-heading: #42446e;
-  --footer-link: #42446e;
-  --font-family-body: "Poppins", sans-serif;
-  --font-family-header-nav-links: "DM Sans", sans-serif;;
-  --box-shadow: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+  --color-silver: #ebeaed;
+  --color-pistachio: #c7cba4;
+  --color-dark-black: #000;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-orchid: #982fee;
+  --color-lavender: #a270ff;
+  --color-midnight-blue: #000255;
+  --color-charcoal: #666;
+  --color-rose-pink: #871781;
+  --color-light-grey: #ccc;
+  --color-pale-yellow-transparent: #e0e0b231;
+  --color-pale-mint: #d7ffe0;
+  --color-dark-grey: #a7a7a7;
+  --color-dark-slate-blue: #42446e;
+  --box-shadow-deep: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+  --border-outline: none;
+  --border-inline: none;
+  --ff-body: "Poppins", sans-serif;
+  --ff-header-nav-links: "DM Sans", sans-serif;
   --font-weight-300: 300;
   --font-weight-400: 400;
   --font-weight-500: 500;
   --font-weight-600: 600;
-  --font-size-18: 18px;
+}
+/* Dark mode styles */
+.dark-mode {
+  --color-silver: #333; 
+  --color-pistachio: #161616; 
+  --color-black: #2a7e3ecb;
+  --color-white: #21573994;
+  --color-orchid: #a648f3;
+  --color-lavender: #d7ffe0;
+  --color-midnight-blue: #3fb65bcb;
+  --color-charcoal: #babe;
+  --color-pale-mint: #21573994;
+  --color-dark-slate-blue: #cacba4;
+  --box-shadow-deep: 2px 2px 20px 0px rgb(215, 255, 224, 0.25);
+  --border-inline: 1px dashed #d7ffe0;
 }
 * {
   padding: 0px;
@@ -48,14 +50,19 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  font-family: var(--font-family-body);
-  background-color: var(--background-color);
+  font-family: var(--ff-body);
+  background-color: var(--color-pistachio);
 }
-
 a {
   text-decoration: none;
+  &:hover {
+    color: var(--color-midnight-blue) !important;
+  }
+  &:focus {
+    color: var(--color-midnight-blue) !important;
+    text-decoration: line-through;
+  }
 }
-
 li {
   list-style-type: none;
 }

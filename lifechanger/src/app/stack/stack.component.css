@@ -9,22 +9,95 @@
     width: 76em;
     margin-left: 1em;
     margin-top: 3.6em;
-    margin-bottom: -0.6em;
+    margin-bottom: -1em;
     & img {
       width: 6.4em;
       height: 6.4em;
     }
   }
   & .stack__h2 {
-    color: var(--solid-heading);
+    color: var(--color-dark-slate-blue);
     font-size: 2.4em;
     line-height: 1.25;
     letter-spacing: -0.4px;
-    padding: 0 0 0.2em 25px;
+    padding: 0 0 0.1em 0.6em;
   }
   & .stack__p {
     font-size: 1.25em;
     margin: 0 1.6em 0;
-    color: var(--dark-content);
+    color: var(--color-charcoal);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .stack {
+    & .stack__div-container {
+      gap: 4.6em;
+      justify-content: center;
+      width: 64em;
+      & img {
+        width: 6em;
+        height: 6em;
+      }
+    }
+  }
+}
+@media screen and (max-width: 992px) {
+  .stack {
+    & .stack__div-container {
+      margin-left: 10em;
+      margin-bottom: -9em;
+      gap: 4em;
+      width: 54em;
+    }
+    & .stack__h2 {
+      margin-left: 6em;
+    }
+    & .stack__p {
+      margin: 0 13em;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .stack {
+    & .stack__div-container {
+      margin-left: 18em;
+      margin-bottom: 6em;
+      gap: 2em;
+      width: 28em;
+      & img {
+        width: 4em;
+        height: 4em;
+      }
+    }
+    & .stack__h2 {
+      margin-left: 8.4em;
+      font-size: 2em;
+    }
+    & .stack__p {
+      margin: 0 15.2em;
+      font-size: 1.2em;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .stack {
+    & .stack__div-container {
+      margin-left: 24em;
+      margin-bottom: 11.4em;
+      width: 16em;
+      & img {
+        width: 2.4em;
+        height: 2.4em;
+      }
+    }
+    & .stack__h2 {
+      margin-left: 17.4em;
+      font-size: 1.4em;
+    }
+    & .stack__p {
+      margin: 0 32em;
+      font-size: 0.8em;
+    }
   }
 }
