@@ -16,8 +16,13 @@
     </div>
     <p>
       <img src="../../assets/experience-info/calendar.svg" />
-      {{ experienceInfo.startDate | date }} -
-      {{ experienceInfo.endDate | date }}
+      {{ experienceInfo.startDate | date: 'shortDate' }} -
+      <span *ngIf="experienceInfo.endDate; else noEndDate">
+        {{ experienceInfo.noEndDate | date: 'shortDate' }}
+      </span>
+      <ng-template #noEndDate>
+        {{ experienceInfo.noEndDate }}
+      </ng-template>
     </p>
   </div>
 </section>

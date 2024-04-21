@@ -14,5 +14,6 @@ export interface ExperienceInfo {
   location?: string;
   startDate: Date;
   endDate?: Date;
+  noEndDate?: string;
   workType: EmploymentType;
 }
