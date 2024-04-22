@@ -10,6 +10,7 @@ export class ProjectCardsService {
       {
         image: {
           path: '../../assets/projects/ua-delivery-project.png',
+          darkModePath: '../../assets/dark-mode/ua-delivery-project-dark-mode.png',
           alt: 'Image of UA delivery project',
         },
         title: 'UA-delivery',
@@ -30,6 +31,7 @@ export class ProjectCardsService {
       {
         image: {
           path: '../../assets/projects/qalight-project.png',
+          darkModePath: '../../assets/dark-mode/qalight-project-dark-mode.png',
           alt: 'Image of QALight project',
         },
         title: 'QALight',
@@ -43,6 +45,7 @@ export class ProjectCardsService {
       {
         image: {
           path: '../../assets/projects/lifechanger-project.png',
+          darkModePath: '../../assets/dark-mode/lifechanger-project-dark-mode.png',
           alt: 'Image of Lifechanger project',
         },
         title: 'Lifechanger',
@@ -57,6 +60,7 @@ export class ProjectCardsService {
       {
         image: {
           path: '../../assets/projects/etch-a-sketch-project.png',
+          darkModePath: '../../assets/dark-mode/etch-a-sketch-project-dark-mode.png',
           alt: 'Image of Etch-a-Sketch project',
         },
         title: 'Etch-a-Sketch',
@@ -71,6 +75,7 @@ export class ProjectCardsService {
       {
         image: {
           path: '../../assets/projects/tic-tac-toe-project.png',
+          darkModePath: '../../assets/dark-mode/tic-tac-toe-project-dark-mode.png',
           alt: 'Image of Tic Tac Toe project',
         },
         title: 'Tic Tac Toe',
@@ -85,6 +90,7 @@ export class ProjectCardsService {
       {
         image: {
           path: '../../assets/projects/quote-machine-project.png',
+          darkModePath: '../../assets/dark-mode/quote-machine-project-dark-mode.png',
           alt: 'Image of Quote Machine project',
         },
         title: 'Quote Machine',

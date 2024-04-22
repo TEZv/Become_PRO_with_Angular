@@ -1,15 +1,12 @@
 <div class="project-card__container">
-  <img
-    [src]="projectCardsInfo.image.path"
-    [alt]="projectCardsInfo.image.alt"
-  />
+  <img [src]="getImageSource()" [alt]="projectCardsInfo.image.alt" />
   <div class="project-card__div-content">
     <h3 class="project-card__h3-title">{{ projectCardsInfo.title }}</h3>
     <p class="project-card__p-description">
       {{ projectCardsInfo.description }}
     </p>
     <p class="project-card__p-tech-stack">
-       &lt;<u>Tech stack</u>&gt;<span>{{ projectCardsInfo.techStack }}</span>
+      &lt;<u>Tech stack</u>&gt;<span>{{ projectCardsInfo.techStack }}</span>
     </p>
     <div class="project-card__div-links">
       <div class="project-card__div-link">

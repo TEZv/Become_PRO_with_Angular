@@ -1,6 +1,7 @@
 export interface ProjectCardsInfo {
   image: {
     path: string;
+    darkModePath: string,
     alt: string;
   };
   title: string;
