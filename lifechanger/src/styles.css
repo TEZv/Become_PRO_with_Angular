@@ -1,6 +1,7 @@
 :root {
   --color-silver: #ebeaed;
   --color-pistachio: #c7cba4;
+  --color-pistachio-light: #faffb717;
   --color-dark-black: #000;
   --color-black: #000;
   --color-white: #fff;
@@ -26,6 +27,7 @@
 }
 /* Dark mode styles */
 .dark-mode {
+  --color-pistachio-light: #d4dd5a17;
   --color-silver: #333; 
   --color-pistachio: #161616; 
   --color-black: #2a7e3ecb;

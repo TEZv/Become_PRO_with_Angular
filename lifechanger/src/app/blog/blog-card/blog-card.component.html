@@ -1,0 +1,22 @@
+<div class="blog__sidebar">
+  <div class="blog-card__container">
+      <img [src]="getImageSource()" [alt]="blogCardsInfo.image.alt" />
+      <div class="blog-card__div-content">
+        <h3 class="blog-card__h3-title">{{ blogCardsInfo.title }}</h3>
+        <p class="blog-card__p-description">
+          {{ blogCardsInfo.description }}
+        </p>
+        <p class="blog-card__p-tech-stack">
+          &lt;<u>Tech stack</u>&gt;<span>{{ blogCardsInfo.techStack }}</span>
+        </p>
+        <div class="blog-card__div-links">
+          <div class="blog-card__div-link">
+            <img [src]="linkSvgSource" alt="Link logo" />
+            <a [href]="blogCardsInfo.previewLiveLink" target="_blank"
+              >Live Preview</a
+            >
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
