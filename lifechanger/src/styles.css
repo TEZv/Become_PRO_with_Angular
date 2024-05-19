@@ -16,6 +16,7 @@
   --color-dark-grey: #a7a7a7;
   --color-dark-slate-blue: #42446e;
   --box-shadow-deep: 2px 2px 100px 0px rgba(0, 0, 0, 0.2);
+  --transparent-background: rgba(0, 0, 0, 0.5);
   --border-outline: none;
   --border-inline: none;
   --ff-body: "Poppins", sans-serif;

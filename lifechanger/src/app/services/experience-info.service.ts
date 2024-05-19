@@ -12,9 +12,18 @@ export class ExperienceInfoService {
   GetWorkExperienceInfos(): ExperienceInfo[] {
     return [
       {
-        title: 'SEO Junior | Online',
+        title: 'Middle Outreach Specialist | Online',
         location: 'Kyiv, Ukraine',
-        project: `Aweb agency`,
+        project: `NetPeak agency`,
+        startDate: new Date('2025-11-14'),
+        noEndDate: 'Present',
+        experienceType: ExperienceType.Work,
+        workType: EmploymentType.FullTime,
+      },
+      {
+        title: 'Junior Outreach Specialist | Online',
+        location: 'Kyiv, Ukraine',
+        project: `NetPeak agency`,
         startDate: new Date('2024-05-25'),
         noEndDate: 'Present',
         experienceType: ExperienceType.Work,
@@ -25,18 +34,9 @@ export class ExperienceInfoService {
         location: 'Kyiv, Ukraine',
         project: `Aweb agency`,
         startDate: new Date('2024-05-14'),
-        endDate: new Date('2024-05-19'),
+        endDate: new Date('2024-05-20'),
         experienceType: ExperienceType.Work,
         workType: EmploymentType.Internship,
-      },
-      {
-        title: 'Operator of the dispensing point | Offline',
-        location: 'Kyiv, Ukraine',
-        project: `ROZETKA's retail`,
-        startDate: new Date('2023-10-06'),
-        endDate: new Date('2024-02-05'),
-        experienceType: ExperienceType.Work,
-        workType: EmploymentType.FullTime,
       },
       {
         title: 'Bachelor in Entrepreneurship & Trade',

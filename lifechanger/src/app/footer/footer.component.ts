@@ -1,18 +1,71 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import {
+  Component,
+  Input,
+  OnChanges,
+  OnInit,
+  SimpleChanges,
+} from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css'],
 })
-export class FooterComponent implements OnChanges {
+export class FooterComponent implements OnChanges, OnInit {
   @Input() isDarkMode: boolean = false;
   @Input() isBlogRoute: boolean = false; // New input property
 
-  constructor() {
+  contactForm!: FormGroup;
+  isFormVisible = false;
+  isSubmitted = false;
+
+  constructor(private formBuilder: FormBuilder) {
     // Initial update of the link target
     this.updateLinkTarget(this.isBlogRoute ? '_self' : '_blank');
     this.updateSVGSource();
+  }
+
+  ngOnInit(): void {
+    this.contactForm = this.formBuilder.group({
+      name: ['', [Validators.required, Validators.pattern(/^[a-zA-Z\s]+$/)]],
+      email: [
+        '',
+        [
+          Validators.required,
+          Validators.pattern(
+            /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
+          ),
+        ],
+      ],
+      message: ['', [Validators.required, Validators.minLength(10)]],
+    });
+  }
+
+  get formControls() {
+    return this.contactForm.controls;
+  }
+
+  showForm(): void {
+    this.isFormVisible = true;
+  }
+
+  hideForm(): void {
+    this.isFormVisible = false;
+    this.isSubmitted = false;
+    this.contactForm.reset();
+  }
+
+  onSubmit(): void {
+    this.isSubmitted = true;
+
+    if (this.contactForm.invalid) {
+      return;
+    }
+
+    // Handle the form submission, e.g., send the data to a server
+    console.log('Form Submitted', this.contactForm.value);
+    this.hideForm();
   }
 
   // Define a default link target attribute
