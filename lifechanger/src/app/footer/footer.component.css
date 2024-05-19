@@ -154,13 +154,13 @@
           opacity: 0.9;
         }
       }
-      &.submit-button {
+      & .submit-button {
         background: var(--color-midnight-blue);
         color: var(--color-pistachio);
       }
       & .cancel-button {
-        background: var(--color-dark-grey);
-        color: var(--color-pistachio);
+        background: var(--color-pistachio);
+        color: var(--color-dark-grey);
       }
     }
   }
