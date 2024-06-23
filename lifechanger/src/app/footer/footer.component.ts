@@ -7,6 +7,31 @@ import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 })
 export class FooterComponent implements OnChanges {
   @Input() isDarkMode: boolean = false;
+  @Input() isBlogRoute: boolean = false; // New input property
+
+  constructor() {
+    // Initial update of the link target
+    this.updateLinkTarget(this.isBlogRoute ? '_self' : '_blank');
+    this.updateSVGSource();
+  }
+
+  // Define a default link target attribute
+  linkTarget: string = '_blank';
+
+  // Method to update the link target attribute
+  updateLinkTarget(target: string): void {
+    this.linkTarget = target;
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['isDarkMode']) {
+      this.updateSVGSource();
+    }
+    if (changes['isBlogRoute']) {
+      // Update the link target based on the route
+      this.updateLinkTarget(this.isBlogRoute ? '_self' : '_blank');
+    }
+  }
 
   private svgTemplateGithub: string = `
     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">

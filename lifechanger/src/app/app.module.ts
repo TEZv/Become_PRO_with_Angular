@@ -11,6 +11,8 @@ import { ProjectCardComponent } from './projects/project-card/project-card.compo
 import { BiographyComponent } from './biography/biography.component';
 import { ExperienceInfoComponent } from './experience-info/experience-info.component';
 import { StackComponent } from './stack/stack.component';
+import { BlogComponent } from './blog/blog.component';
+import { BlogCardComponent } from './blog/blog-card/blog-card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { StackComponent } from './stack/stack.component';
     ProjectCardComponent,
     BiographyComponent,
     ExperienceInfoComponent,
-    StackComponent
+    StackComponent,
+    BlogComponent,
+    BlogCardComponent
   ],
   imports: [
     BrowserModule,

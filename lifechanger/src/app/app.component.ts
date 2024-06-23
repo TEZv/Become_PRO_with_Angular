@@ -1,4 +1,6 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+
+import { Component, ViewChild, OnInit, OnDestroy } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 import { Subscription, Observable } from 'rxjs';
 import { DarkModeService } from './services/dark-mode.service';
 
@@ -8,14 +10,19 @@ import { DarkModeService } from './services/dark-mode.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit, OnDestroy {
-  // Observable for dark mode state
   isDarkMode$: Observable<boolean> = this.darkModeService.isDarkMode$;
+  private darkModeSubscription: Subscription = new Subscription();
 
-  private darkModeSubscription: Subscription = new Subscription;
+  // State to determine if the current route is the blog route
+  isBlogRoute: boolean = false;
 
-  constructor(private darkModeService: DarkModeService) {}
+  constructor(
+    private router: Router,
+    private darkModeService: DarkModeService
+  ) {}
 
   ngOnInit(): void {
+    // Subscribe to dark mode state
     this.darkModeSubscription = this.darkModeService.isDarkMode$.subscribe(
       (isDarkMode) => {
         if (isDarkMode) {
@@ -25,8 +32,14 @@ export class AppComponent implements OnInit, OnDestroy {
         }
       }
     );
+    // Subscribe to router events to detect route changes
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        // Check if the current route is the blog route
+        this.isBlogRoute = event.urlAfterRedirects.includes('/blog');
+      }
+    });
   }
-
   ngOnDestroy(): void {
     this.darkModeSubscription.unsubscribe();
   }

@@ -72,7 +72,10 @@
     <div class="footer__primary">
       <div class="footer__links">
         <button class="footer__links-button">Fill up the Form</button>
-        <a href="#blog" class="footer__links-link footer__links-link-blog"
+        <a
+          [routerLink]="['/blog']"
+          [target]="linkTarget"
+          class="footer__links-link footer__links-link-blog"
           >Blog</a
         >
       </div>

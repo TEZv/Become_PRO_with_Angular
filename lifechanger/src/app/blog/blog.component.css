@@ -1,0 +1,176 @@
+.blog {
+  & .blog-card__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: .4em;
+    background-color: var(--color-pistachio-light);
+    border-radius: 1em;
+    padding: 0 1em;    
+    & img {
+      width: 5.5em;
+      height: 5.2em;
+      border-top-left-radius: 1em;
+    }
+  }
+  & .blog-card__p-side-description {
+    width: 10em;
+    background-color: #bfffac54;
+    box-shadow: .1em .1em .15em rgba(41, 48, 27, 0.3);
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+    border-bottom-right-radius: .5em;
+    padding: 1em 2em;
+    width: 14em;
+  }
+  & .blog__sidebar-container {
+    display: flex;
+    gap: 1em;
+  }
+  & .blog__heading {
+    color: var(--color-dark-slate-blue);
+    font-size: 2.6em;
+    line-height: 1.2;
+    padding: 4.6em 0 1em 0.4em;
+    text-align: center;
+  }
+  & .blog__description {
+    color: var(--color-charcoal);
+    line-height: 1.2;
+    font-size: 1.2em;
+    margin: 1em 1.2em 1.4em 1em;
+    text-align: center;
+  }
+  & .blog__swiper-container {
+    width: 100%;
+    height: 22em;
+    overflow-y: auto;
+    margin: 0 0 -3.8em 0em;
+    & .blog__slider-container {
+      width: 100%;
+      height: 18.4em;
+    }
+  }
+  & .blog__card {
+    text-align: center;
+    font-size: 1.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  & ::-webkit-scrollbar {
+    width: 0.1em;
+  }
+  & ::-webkit-scrollbar-thumb {
+    background-color: var(--color-light-grey);
+    border: 1px solid var(--color-dark-grey);
+    border-radius: 1em;
+  }
+  & ::-webkit-scrollbar-track {
+    background: var(--color-pale-mint);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .blog {
+    & .blog__heading {
+      text-align: center;
+    }
+    & .blog__description {
+      margin-left: 2em;
+      text-align: center;
+    }
+    & .blog__swiper-container {
+      width: 100%;
+      height: 22em;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog {
+    & .blog__heading {
+      color: var(--color-dark-slate-blue);
+      font-size: 2.6em;
+      line-height: 1.2;
+      padding: 4.6em 0 0 0.4em;
+    }
+    & .blog__description {
+      color: var(--color-charcoal);
+      line-height: 1.2;
+      font-size: 1.2em;
+      margin: 1em 1.2em 1.4em 1em;
+    }
+    & .blog__swiper-container {
+      width: 100%;
+      height: 22em;
+      overflow-y: auto;
+      margin: 0 0 -3.8em 0em;
+      & .blog__slider-container {
+        width: 100%;
+        height: 18.4em;
+      }
+    }
+    & .blog__card {
+      text-align: center;
+      font-size: 1.4em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    & ::-webkit-scrollbar {
+      width: 0.1em;
+    }
+    & ::-webkit-scrollbar-thumb {
+      background-color: var(--color-light-grey);
+      border: 1px solid var(--color-dark-grey);
+      border-radius: 1em;
+    }
+    & ::-webkit-scrollbar-track {
+      background: var(--color-pale-mint);
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  .blog {
+    & .blog__heading {
+      color: var(--color-dark-slate-blue);
+      font-size: 2.6em;
+      line-height: 1.2;
+      padding: 4.6em 0 0 0.4em;
+    }
+    & .blog__description {
+      color: var(--color-charcoal);
+      line-height: 1.2;
+      font-size: 1.2em;
+      margin: 1em 1.2em 1.4em 1em;
+    }
+    & .blog__swiper-container {
+      width: 100%;
+      height: 22em;
+      overflow-y: auto;
+      margin: 0 0 -3.8em 0em;
+      & .blog__slider-container {
+        width: 100%;
+        height: 18.4em;
+      }
+    }
+    & .blog__card {
+      text-align: center;
+      font-size: 1.4em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    & ::-webkit-scrollbar {
+      width: 0.1em;
+    }
+    & ::-webkit-scrollbar-thumb {
+      background-color: var(--color-light-grey);
+      border: 1px solid var(--color-dark-grey);
+      border-radius: 1em;
+    }
+    & ::-webkit-scrollbar-track {
+      background: var(--color-pale-mint);
+    }
+  }
+}
