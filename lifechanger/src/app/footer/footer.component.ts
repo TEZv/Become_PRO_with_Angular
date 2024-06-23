@@ -73,6 +73,17 @@ export class FooterComponent implements OnChanges {
   telegramSvgSource!: string;
   linkedInSvgSource!: string;
 
+  constructor() {
+    // Set the default fill color
+    this.updateSVGSource();
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['isDarkMode']) {
+      this.updateSVGSource();
+    }
+  }
+
   // Update the SVG source based on the current fill color
   updateSVGSource(): void {
     const githubFillColor = this.isDarkMode ? '#a270ff' : '#1e0e62';

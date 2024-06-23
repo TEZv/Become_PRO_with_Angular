@@ -1,3 +1,4 @@
+
 import { Component, ViewChild, OnInit, OnDestroy } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { Subscription, Observable } from 'rxjs';
@@ -31,7 +32,6 @@ export class AppComponent implements OnInit, OnDestroy {
         }
       }
     );
-
     // Subscribe to router events to detect route changes
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
@@ -40,7 +40,6 @@ export class AppComponent implements OnInit, OnDestroy {
       }
     });
   }
-
   ngOnDestroy(): void {
     this.darkModeSubscription.unsubscribe();
   }
