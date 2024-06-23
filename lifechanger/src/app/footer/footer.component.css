@@ -127,6 +127,10 @@
   .footer {
     width: 70%;
     margin-left: 6em;
+    & p {
+      margin-top: -3em;
+      margin-right: -0.2em;
+    }
     & .footer__logo {
       height: 44%;
       margin-top: 3em;
@@ -197,7 +201,7 @@
     width: 40%;
     & .footer__logo {
       position: relative;
-      top: 2em;
+      top: -1em;
       left: 5em;
       & .footer__image {
         margin-right: 5.6em;

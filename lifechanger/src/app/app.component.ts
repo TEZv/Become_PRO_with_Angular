@@ -1,15 +1,17 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { Subscription, Observable } from 'rxjs';
 import { DarkModeService } from './services/dark-mode.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit, OnDestroy {
-  title = 'lifechanger';
+  // Observable for dark mode state
+  isDarkMode$: Observable<boolean> = this.darkModeService.isDarkMode$;
 
-  private darkModeSubscription: Subscription = new Subscription();
+  private darkModeSubscription: Subscription = new Subscription;
 
   constructor(private darkModeService: DarkModeService) {}
 

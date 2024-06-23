@@ -9,8 +9,6 @@ export class DarkModeService {
     new BehaviorSubject<boolean>(false);
   public isDarkMode$: Observable<boolean> = this.darkModeSubject.asObservable();
 
-  constructor() {}
-
   toggleDarkMode(): void {
     this.darkModeSubject.next(!this.darkModeSubject.value);
   }

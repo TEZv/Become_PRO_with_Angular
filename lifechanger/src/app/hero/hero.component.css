@@ -65,8 +65,9 @@
       }
     }
     & .hero__right-side {
+      height: 15.8em;
       & img {
-        margin-top: 6px;
+        margin-top: .05em;
         border-radius: 50%;
         height: 15.6em;
         width: 17em;
@@ -86,6 +87,7 @@
       }
     }
     & .hero__right-side {
+      height: 10em;
       & img {
         height: 10em;
         width: 12em;
@@ -105,6 +107,7 @@
       }
     }
     & .hero__right-side {
+      height: 7em;
       & img {
         height: 7em;
         width: 8em;
