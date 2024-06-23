@@ -1,18 +1,34 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import {
+  Component,
+  Input,
+  OnChanges,
+  OnInit,
+  Output,
+  SimpleChanges,
+} from '@angular/core';
+import { FormVisibilityService } from '../services/form-visibility.service';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css'],
 })
-export class FooterComponent implements OnChanges {
+export class FooterComponent implements OnChanges, OnInit {
   @Input() isDarkMode: boolean = false;
-  @Input() isBlogRoute: boolean = false; // New input property
+  @Input() isBlogRoute: boolean = false;
 
-  constructor() {
-    // Initial update of the link target
-    this.updateLinkTarget(this.isBlogRoute ? '_self' : '_blank');
-    this.updateSVGSource();
+  isFormVisible = false;
+
+  constructor(private formVisibilityService: FormVisibilityService) {}
+
+  ngOnInit(): void {
+    this.formVisibilityService.formVisible$.subscribe((visible) => {
+      this.isFormVisible = visible;
+    });
+  }
+
+  showForm(): void {
+    this.formVisibilityService.showForm();
   }
 
   // Define a default link target attribute
@@ -83,7 +99,6 @@ export class FooterComponent implements OnChanges {
       this.updateSVGSource();
     }
   }
-
   // Update the SVG source based on the current fill color
   updateSVGSource(): void {
     const githubFillColor = this.isDarkMode ? '#a270ff' : '#1e0e62';

@@ -71,7 +71,9 @@
   <div class="footer__container footer__nav-container">
     <div class="footer__primary">
       <div class="footer__links">
-        <button class="footer__links-button">Fill up the Form</button>
+        <button class="footer__links-button" (click)="showForm()">
+          Contact Me
+        </button>
         <a
           [routerLink]="['/blog']"
           [target]="linkTarget"
@@ -80,6 +82,8 @@
         >
       </div>
     </div>
+
+    <app-modal-form *ngIf="isFormVisible"></app-modal-form>
     <p>
       Designed and built by <span>Oksana Kolisnyk & Ruslan Dzobko</span> with
       <span>Love</span> / <span>Coffee</span>

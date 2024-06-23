@@ -1,4 +1,6 @@
 .footer {
+  margin-top: 2em;
+  font-family: var(--ff-body);
   & > img {
     margin-top: 1.6rem;
     margin-left: 2.4rem;
@@ -95,6 +97,73 @@
     & .footer__links-link-mail {
       color: var(--color-dark-slate-blue);
       margin-left: 4em;
+    }
+  }
+}
+
+.form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--transparent-background);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  & .form-container {
+    background: var(--color-white);
+    padding: 3em;
+    border-radius: 0.5em;
+    width: 90%;
+    max-width: 42em;
+    box-shadow: var(--box-shadow-deep);
+    & .form-group {
+      margin-bottom: 1em;
+      & label {
+        display: block;
+        color: var(--color-dark-slate-blue);
+        margin-bottom: 0.2em;
+        font-weight: bold;
+      }
+      & input,
+      & textarea {
+        width: 100%;
+        padding: 0.8em;
+        border: 1px solid var(--color-light-grey);
+        border-radius: 4px;
+        &.is-invalid {
+          border-color: var(--color-rose-pink);
+        }
+      }
+      & .invalid-feedback {
+        color: var(--color-orchid);
+        font-size: 0.875em;
+      }
+    }
+    & .form-buttons {
+      display: flex;
+      justify-content: space-between;
+      & .submit-button,
+      & .cancel-button {
+        padding: 0.8em 1.2em;
+        border: none;
+        border-radius: 0.2em;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+      & .submit-button {
+        background: var(--color-midnight-blue);
+        color: var(--color-pistachio);
+      }
+      & .cancel-button {
+        background: var(--color-pistachio);
+        color: var(--color-dark-grey);
+      }
     }
   }
 }

@@ -13,6 +13,9 @@ import { ExperienceInfoComponent } from './experience-info/experience-info.compo
 import { StackComponent } from './stack/stack.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogCardComponent } from './blog/blog-card/blog-card.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ModalFormComponent } from './footer/modal-form/modal-form.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -26,13 +29,17 @@ import { BlogCardComponent } from './blog/blog-card/blog-card.component';
     ExperienceInfoComponent,
     StackComponent,
     BlogComponent,
-    BlogCardComponent
+    BlogCardComponent,
+    ModalFormComponent
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
