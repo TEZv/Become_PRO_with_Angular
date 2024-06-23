@@ -13,8 +13,7 @@
       font-size: 3.6em;
       line-height: 1.25;
       letter-spacing: -1px;
-      font-family: var(--ff-body);
-      font-weight: var(--font-weight-700);
+
       & .hero__heading-break {
         display: block;
       }

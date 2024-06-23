@@ -40,7 +40,7 @@ export class AppComponent implements OnInit, OnDestroy {
       }
     });
   }
-
+  
   ngOnDestroy(): void {
     this.darkModeSubscription.unsubscribe();
   }

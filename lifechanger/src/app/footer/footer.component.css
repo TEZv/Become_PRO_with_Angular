@@ -35,7 +35,6 @@
   }
   & p span {
     color: var(--color-orchid);
-    font-family: var(--ff-body);
   }
   & p span:first-child {
     background: linear-gradient(
@@ -78,10 +77,8 @@
     & .footer__links-link {
       color: var(--color-dark-slate-blue);
       font-size: 1.1em;
-      font-family: var(--ff-header-nav-links);
     }
     & .footer__links-button {
-      font-family: var(--ff-header-nav-links);
       color: var(--color-dark-slate-blue);
       background-color: var(--color-white);
       font-size: 1.1em;
