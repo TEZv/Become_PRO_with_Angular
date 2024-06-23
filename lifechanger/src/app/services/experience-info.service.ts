@@ -12,7 +12,7 @@ export class ExperienceInfoService {
   GetWorkExperienceInfos(): ExperienceInfo[] {
     return [
       {
-        title: 'Middle Outreach Specialist | Online',
+        title: 'Researcher Specialist | Online',
         location: 'Kyiv, Ukraine',
         project: `NetPeak agency`,
         startDate: new Date('2025-11-14'),
@@ -21,10 +21,10 @@ export class ExperienceInfoService {
         workType: EmploymentType.FullTime,
       },
       {
-        title: 'Junior Outreach Specialist | Online',
+        title: 'Researcher Specialist | Online',
         location: 'Kyiv, Ukraine',
         project: `NetPeak agency`,
-        startDate: new Date('2024-05-25'),
+        startDate: new Date('2024-05-27'),
         noEndDate: 'Present',
         experienceType: ExperienceType.Work,
         workType: EmploymentType.FullTime,

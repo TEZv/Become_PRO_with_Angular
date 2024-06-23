@@ -3,9 +3,10 @@ import {
   Input,
   OnChanges,
   OnInit,
+  Output,
   SimpleChanges,
 } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormVisibilityService } from '../services/form-visibility.service';
 
 @Component({
   selector: 'app-footer',
@@ -14,58 +15,20 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class FooterComponent implements OnChanges, OnInit {
   @Input() isDarkMode: boolean = false;
-  @Input() isBlogRoute: boolean = false; // New input property
+  @Input() isBlogRoute: boolean = false;
 
-  contactForm!: FormGroup;
   isFormVisible = false;
-  isSubmitted = false;
 
-  constructor(private formBuilder: FormBuilder) {
-    // Initial update of the link target
-    this.updateLinkTarget(this.isBlogRoute ? '_self' : '_blank');
-    this.updateSVGSource();
-  }
+  constructor(private formVisibilityService: FormVisibilityService) {}
 
   ngOnInit(): void {
-    this.contactForm = this.formBuilder.group({
-      name: ['', [Validators.required, Validators.pattern(/^[a-zA-Z\s]+$/)]],
-      email: [
-        '',
-        [
-          Validators.required,
-          Validators.pattern(
-            /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/
-          ),
-        ],
-      ],
-      message: ['', [Validators.required, Validators.minLength(10)]],
+    this.formVisibilityService.formVisible$.subscribe((visible) => {
+      this.isFormVisible = visible;
     });
   }
 
-  get formControls() {
-    return this.contactForm.controls;
-  }
-
   showForm(): void {
-    this.isFormVisible = true;
-  }
-
-  hideForm(): void {
-    this.isFormVisible = false;
-    this.isSubmitted = false;
-    this.contactForm.reset();
-  }
-
-  onSubmit(): void {
-    this.isSubmitted = true;
-
-    if (this.contactForm.invalid) {
-      return;
-    }
-
-    // Handle the form submission, e.g., send the data to a server
-    console.log('Form Submitted', this.contactForm.value);
-    this.hideForm();
+    this.formVisibilityService.showForm();
   }
 
   // Define a default link target attribute

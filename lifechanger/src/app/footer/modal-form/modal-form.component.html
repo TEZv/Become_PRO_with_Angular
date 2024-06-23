@@ -1,0 +1,74 @@
+<div *ngIf="isFormVisible" class="form-overlay">
+  <div class="form-container">
+    <form (ngSubmit)="onSubmit()" [formGroup]="contactForm">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input
+          type="text"
+          id="firstName"
+          formControlName="firstName"
+          placeholder="Your First Name"
+          [ngClass]="{ 'is-invalid': formControls['firstName'].invalid && (formControls['firstName'].dirty || formControls['firstName'].touched) }"
+        />
+        <div *ngIf="formControls['firstName'].invalid && (formControls['firstName'].dirty || formControls['firstName'].touched)" class="invalid-feedback">
+          <div *ngIf="formControls['firstName']?.errors?.['required']">First name is required.</div>
+          <div *ngIf="formControls['firstName']?.errors?.['maxlength']">First name cannot be longer than 30 characters.</div>
+          <div *ngIf="formControls['firstName']?.errors?.['minlength']">First name cannot be less than 5 characters.</div>
+          <div *ngIf="formControls['firstName']?.errors?.['pattern']">First name can only contain Cyrillic or Latin characters.</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input
+          type="text"
+          id="lastName"
+          formControlName="lastName"
+          placeholder="Your Last Name"
+          [ngClass]="{ 'is-invalid': formControls['lastName'].invalid && (formControls['lastName'].dirty || formControls['lastName'].touched) }"
+        />
+        <div *ngIf="formControls['lastName'].invalid && (formControls['lastName'].dirty || formControls['lastName'].touched)" class="invalid-feedback">
+          <div *ngIf="formControls['lastName']?.errors?.['required']">Last name is required.</div>
+          <div *ngIf="formControls['lastName']?.errors?.['maxlength']">Last name cannot be longer than 50 characters.</div>
+          <div *ngIf="formControls['lastName']?.errors?.['minlength']">Last name cannot be less than 5 characters.</div>
+          <div *ngIf="formControls['lastName']?.errors?.['pattern']">Last name can only contain Cyrillic or Latin characters.</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          formControlName="email"
+          placeholder="Your email"
+          [ngClass]="{ 'is-invalid': formControls['email'].invalid && (formControls['email'].dirty || formControls['email'].touched) }"
+        />
+        <div *ngIf="formControls['email'].invalid && (formControls['email'].dirty || formControls['email'].touched)" class="invalid-feedback">
+          <div *ngIf="formControls['email']?.errors?.['required']">Email is required.</div>
+          <div *ngIf="formControls['email']?.errors?.['pattern']">Invalid email format -> example&#64;example.com.</div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          formControlName="message"
+          placeholder="Your message"
+          [ngClass]="{ 'is-invalid': formControls['message'].invalid && (formControls['message'].dirty || formControls['message'].touched) }"
+        ></textarea>
+        <div *ngIf="formControls['message'].invalid && (formControls['message'].dirty || formControls['message'].touched)" class="invalid-feedback">
+          <div *ngIf="formControls['message']?.errors?.['required']">Message is required.</div>
+          <div *ngIf="formControls['message']?.errors?.['minlength']">Message must be at least 10 characters.</div>
+          <div *ngIf="formControls['message']?.errors?.['maxlength']">Message cannot be longer than 150 characters.</div>
+        </div>
+      </div>
+
+      <div class="form-buttons">
+        <button type="submit" class="submit-button" [disabled]="contactForm.invalid">Submit</button>
+        <button type="button" class="cancel-button" (click)="hideForm()">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
