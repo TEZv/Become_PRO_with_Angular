@@ -9,7 +9,6 @@ import { DarkModeService } from './services/dark-mode.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit, OnDestroy {
-  isDarkMode$: Observable<boolean> = this.darkModeService.isDarkMode$;
   private darkModeSubscription: Subscription = new Subscription();
 
   // State to determine if the current route is the blog route
@@ -40,7 +39,7 @@ export class AppComponent implements OnInit, OnDestroy {
       }
     });
   }
-  
+
   ngOnDestroy(): void {
     this.darkModeSubscription.unsubscribe();
   }

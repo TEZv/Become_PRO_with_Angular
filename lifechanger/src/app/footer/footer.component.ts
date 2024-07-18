@@ -7,6 +7,7 @@ import {
   SimpleChanges,
 } from '@angular/core';
 import { FormVisibilityService } from '../services/form-visibility.service';
+import { DarkModeService } from '../services/dark-mode.service';
 
 @Component({
   selector: 'app-footer',
@@ -14,12 +15,21 @@ import { FormVisibilityService } from '../services/form-visibility.service';
   styleUrls: ['./footer.component.css'],
 })
 export class FooterComponent implements OnChanges, OnInit {
-  @Input() isDarkMode: boolean = false;
   @Input() isBlogRoute: boolean = false;
 
   isFormVisible = false;
+  isDarkMode: boolean = false;
 
-  constructor(private formVisibilityService: FormVisibilityService) {}
+  constructor(
+    private formVisibilityService: FormVisibilityService,
+    private darkModeService: DarkModeService) {
+     // Set the default fill color
+     this.darkModeService.isDarkMode$.subscribe((isDarkMode) => {
+      this.isDarkMode = isDarkMode;
+      this.updateSVGSource();// Update SVG colors based on dark mode state
+    });
+
+  }
 
   ngOnInit(): void {
     this.formVisibilityService.formVisible$.subscribe((visible) => {
@@ -43,6 +53,7 @@ export class FooterComponent implements OnChanges, OnInit {
     if (changes['isDarkMode']) {
       this.updateSVGSource();
     }
+
     if (changes['isBlogRoute']) {
       // Update the link target based on the route
       this.updateLinkTarget(this.isBlogRoute ? '_self' : '_blank');
@@ -89,16 +100,9 @@ export class FooterComponent implements OnChanges, OnInit {
   telegramSvgSource!: string;
   linkedInSvgSource!: string;
 
-  constructor() {
-    // Set the default fill color
-    this.updateSVGSource();
-  }
 
-  ngOnChanges(changes: SimpleChanges): void {
-    if (changes['isDarkMode']) {
-      this.updateSVGSource();
-    }
-  }
+
+
   // Update the SVG source based on the current fill color
   updateSVGSource(): void {
     const githubFillColor = this.isDarkMode ? '#a270ff' : '#1e0e62';
