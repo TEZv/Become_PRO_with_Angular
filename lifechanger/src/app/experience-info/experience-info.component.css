@@ -1,16 +1,19 @@
 .work-experience__section {
   height: 4.4em;
+  font-family: var(--ff-body);
   & .work-experience__h4-container {
     display: flex;
     justify-content: space-between;
     margin-top: 1.6em;
     width: 38em;
+    
     & h4 {
       color: var(--color-dark-slate-blue);
       font-size: 1.2em;
       font-weight: var(--font-weight-400);
       line-height: 1.2;
       letter-spacing: 0.08em;
+      font-family: var(--ff-body);
     }
     & .work-experience__btn {
       font-weight: var(--font-weight-600);
@@ -21,6 +24,7 @@
       border: none;
       box-shadow: 1px 2px 1px var(--color-charcoal);
       border-radius: 30px;
+
     }
   }
   & .work-experience__div-outer {
