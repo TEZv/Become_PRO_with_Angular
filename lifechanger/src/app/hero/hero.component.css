@@ -13,6 +13,8 @@
       font-size: 3.6em;
       line-height: 1.25;
       letter-spacing: -1px;
+      font-family: var(--ff-body);
+      font-weight: var(--font-weight-600);
 
       & .hero__heading-break {
         display: block;
@@ -76,7 +78,12 @@
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-height: 768px) {
+  .hero__container {
+    margin-top: 14em;
+  }
+}
+@media screen and (max-width: 768px) and (max-height: 768px) {
   .hero__container {
     justify-content: center;
     margin-top: 20em;

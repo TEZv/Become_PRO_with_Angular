@@ -101,6 +101,8 @@ export class FooterComponent implements OnChanges, OnInit {
   linkedInSvgSource!: string;
 
 
+
+
   // Update the SVG source based on the current fill color
   updateSVGSource(): void {
     const githubFillColor = this.isDarkMode ? '#a270ff' : '#1e0e62';
