@@ -13,7 +13,7 @@ export class ExperienceInfoService {
     return [
       {
         title: 'Researcher Specialist',
-        location: 'Kyiv, Ukraine',
+        location: 'Kyiv, Ukraine ',
         project: `NetPeak`,
         startDate: new Date('2025-11-14'),
         noEndDate: 'Present',
