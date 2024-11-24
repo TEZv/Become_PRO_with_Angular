@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {
-  EmploymentType,
+  WorkType,
   ExperienceInfo,
   ExperienceType,
 } from '../models/experience-info.model';
@@ -16,18 +16,16 @@ export class ExperienceInfoService {
         location: 'Kyiv, Ukraine',
         project: `NetPeak agency`,
         startDate: new Date('2025-11-14'),
-        noEndDate: 'Present',
         experienceType: ExperienceType.Work,
-        workType: EmploymentType.FullTime,
+        workType: WorkType.FullTime,
       },
       {
         title: 'Researcher Specialist | Online',
         location: 'Kyiv, Ukraine',
         project: `NetPeak agency`,
         startDate: new Date('2024-05-27'),
-        noEndDate: 'Present',
         experienceType: ExperienceType.Work,
-        workType: EmploymentType.FullTime,
+        workType: WorkType.FullTime,
       },
       {
         title: 'SEO Intern | Online',
@@ -36,23 +34,25 @@ export class ExperienceInfoService {
         startDate: new Date('2024-05-14'),
         endDate: new Date('2024-05-20'),
         experienceType: ExperienceType.Work,
-        workType: EmploymentType.Internship,
+        workType: WorkType.Internship,
       },
       {
         title: 'Bachelor in Entrepreneurship & Trade',
-        project: `University "KROK" | Kyiv`,
+        project: `University "KROK"`,
+        location: 'Kyiv, Ukraine',
         startDate: new Date('2021-10-10'),
         endDate: new Date('2023-07-31'),
         experienceType: ExperienceType.Education,
-        workType: EmploymentType.FullTime,
+        workType: WorkType.FullTime,
       },
       {
         title: 'Junior specialist in Trade',
-        project: `College of Art and Design | Kyiv`,
+        project: `College of Art and Design`,
+
         startDate: new Date('2017-09-01'),
         endDate: new Date('2021-02-01'),
         experienceType: ExperienceType.Education,
-        workType: EmploymentType.FullTime,
+        workType: WorkType.FullTime,
       },
     ];
   }

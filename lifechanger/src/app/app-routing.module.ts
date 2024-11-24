@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'tech-stack', component: StackComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'blog', component: BlogComponent }
+  { path: 'blog',  component: DetailedBlogComponent },
 ];
 
 @NgModule({

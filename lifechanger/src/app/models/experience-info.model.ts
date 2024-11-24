@@ -3,7 +3,7 @@ export enum ExperienceType {
   Education = 'Education',
 }
 
-export enum EmploymentType {
+export enum WorkType {
   Internship = 'Internship',
   FullTime = 'Full Time',
 }
@@ -14,6 +14,5 @@ export interface ExperienceInfo {
   location?: string;
   startDate: Date;
   endDate?: Date;
-  noEndDate?: string;
-  workType: EmploymentType;
+  workType: WorkType;
 }
