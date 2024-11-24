@@ -12,7 +12,7 @@ export class ExperienceInfoService {
   GetWorkExperienceInfos(): ExperienceInfo[] {
     return [
       {
-        title: 'Researcher Specialist',
+        title: 'Researcher Specialist2',
         location: 'Kyiv, Ukraine ',
         project: `NetPeak`,
         startDate: new Date('2025-11-14'),
