@@ -14,7 +14,7 @@ export class ExperienceInfoService {
       {
         title: 'Researcher Specialist',
         location: 'Kyiv, Ukraine',
-        project: `NetPeak agency`,
+        project: `NetPeak`,
         startDate: new Date('2025-11-14'),
         noEndDate: 'Present',
         experienceType: ExperienceType.Work,
